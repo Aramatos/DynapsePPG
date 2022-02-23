@@ -74,19 +74,19 @@ void _after_run_Core_3_thresholder_1_codeobject()
     ///// CONSTANTS ///////////
     const size_t _numIspkthr = 1;
 const size_t _numt = 1;
-const int64_t N = 256;
 const size_t _numnot_refractory = 256;
 const size_t _numlastspike = 256;
-const size_t _num_spikespace = 257;
 const size_t _numImem = 256;
+const int64_t N = 256;
+const size_t _num_spikespace = 257;
     ///// POINTERS ////////////
         
     double*   _ptr_array_Core_3_Ispkthr = _array_Core_3_Ispkthr;
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
     char* __restrict  _ptr_array_Core_3_not_refractory = _array_Core_3_not_refractory;
     double* __restrict  _ptr_array_Core_3_lastspike = _array_Core_3_lastspike;
-    int32_t* __restrict  _ptr_array_Core_3__spikespace = _array_Core_3__spikespace;
     double* __restrict  _ptr_array_Core_3_Imem = _array_Core_3_Imem;
+    int32_t* __restrict  _ptr_array_Core_3__spikespace = _array_Core_3__spikespace;
 
 _ptr_array_Core_3__spikespace[N] = 0;  // Note that this is not an off-by-1-error: the array has N+1 elements
 

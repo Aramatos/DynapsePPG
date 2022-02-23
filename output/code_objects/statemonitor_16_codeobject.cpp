@@ -79,20 +79,20 @@ void _run_statemonitor_16_codeobject()
 
     ///// CONSTANTS ///////////
     const size_t _num_clock_t = 1;
+const size_t _num_source_I_syn_nmda = 256;
+const size_t _numN = 1;
 const size_t _num_indices = 1;
 double* const _array_statemonitor_16_t = _dynamic_array_statemonitor_16_t.empty()? 0 : &_dynamic_array_statemonitor_16_t[0];
 const size_t _numt = _dynamic_array_statemonitor_16_t.size();
-const size_t _numN = 1;
-const size_t _num_source_I_syn_nmda = 256;
 int32_t* const _array_NMDA1__synaptic_post = _dynamic_array_NMDA1__synaptic_post.empty()? 0 : &_dynamic_array_NMDA1__synaptic_post[0];
 const size_t _num_postsynaptic_idx = _dynamic_array_NMDA1__synaptic_post.size();
     ///// POINTERS ////////////
         
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
+    double* __restrict  _ptr_array_Core_1_I_syn_nmda = _array_Core_1_I_syn_nmda;
+    int32_t*   _ptr_array_statemonitor_16_N = _array_statemonitor_16_N;
     int32_t*   _ptr_array_statemonitor_16__indices = _array_statemonitor_16__indices;
     double* __restrict  _ptr_array_statemonitor_16_t = _array_statemonitor_16_t;
-    int32_t*   _ptr_array_statemonitor_16_N = _array_statemonitor_16_N;
-    double* __restrict  _ptr_array_Core_1_I_syn_nmda = _array_Core_1_I_syn_nmda;
     int32_t* __restrict  _ptr_array_NMDA1__synaptic_post = _array_NMDA1__synaptic_post;
 
 

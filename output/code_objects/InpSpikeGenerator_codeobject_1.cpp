@@ -78,25 +78,25 @@ void _run_InpSpikeGenerator_codeobject_1()
 
 
     ///// CONSTANTS ///////////
-    int32_t* const _array_InpSpikeGenerator__timebins = _dynamic_array_InpSpikeGenerator__timebins.empty()? 0 : &_dynamic_array_InpSpikeGenerator__timebins[0];
+    int32_t* const _array_InpSpikeGenerator_neuron_index = _dynamic_array_InpSpikeGenerator_neuron_index.empty()? 0 : &_dynamic_array_InpSpikeGenerator_neuron_index[0];
+const size_t _numneuron_index = _dynamic_array_InpSpikeGenerator_neuron_index.size();
+int32_t* const _array_InpSpikeGenerator__timebins = _dynamic_array_InpSpikeGenerator__timebins.empty()? 0 : &_dynamic_array_InpSpikeGenerator__timebins[0];
 const size_t _num_timebins = _dynamic_array_InpSpikeGenerator__timebins.size();
 const int64_t N = 1;
-int32_t* const _array_InpSpikeGenerator_neuron_index = _dynamic_array_InpSpikeGenerator_neuron_index.empty()? 0 : &_dynamic_array_InpSpikeGenerator_neuron_index[0];
-const size_t _numneuron_index = _dynamic_array_InpSpikeGenerator_neuron_index.size();
-const size_t _num_period_bins = 1;
-const size_t _num_lastindex = 1;
 const size_t _num_spikespace = 2;
+const size_t _num_period_bins = 1;
 const size_t _numt_in_timesteps = 1;
+const size_t _num_lastindex = 1;
 int32_t* const _array_InpSpikeGenerator_spike_number = _dynamic_array_InpSpikeGenerator_spike_number.empty()? 0 : &_dynamic_array_InpSpikeGenerator_spike_number[0];
 const size_t _numspike_number = _dynamic_array_InpSpikeGenerator_spike_number.size();
     ///// POINTERS ////////////
         
-    int32_t* __restrict  _ptr_array_InpSpikeGenerator__timebins = _array_InpSpikeGenerator__timebins;
     int32_t* __restrict  _ptr_array_InpSpikeGenerator_neuron_index = _array_InpSpikeGenerator_neuron_index;
-    int32_t*   _ptr_array_InpSpikeGenerator__period_bins = _array_InpSpikeGenerator__period_bins;
-    int32_t*   _ptr_array_InpSpikeGenerator__lastindex = _array_InpSpikeGenerator__lastindex;
+    int32_t* __restrict  _ptr_array_InpSpikeGenerator__timebins = _array_InpSpikeGenerator__timebins;
     int32_t* __restrict  _ptr_array_InpSpikeGenerator__spikespace = _array_InpSpikeGenerator__spikespace;
+    int32_t*   _ptr_array_InpSpikeGenerator__period_bins = _array_InpSpikeGenerator__period_bins;
     int64_t*   _ptr_array_defaultclock_timestep = _array_defaultclock_timestep;
+    int32_t*   _ptr_array_InpSpikeGenerator__lastindex = _array_InpSpikeGenerator__lastindex;
     int32_t* __restrict  _ptr_array_InpSpikeGenerator_spike_number = _array_InpSpikeGenerator_spike_number;
 
 

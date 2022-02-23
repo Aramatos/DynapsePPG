@@ -78,28 +78,28 @@ void _run_spikemonitor_5_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _num_source_t = 1;
-double* const _array_spikemonitor_5_t = _dynamic_array_spikemonitor_5_t.empty()? 0 : &_dynamic_array_spikemonitor_5_t[0];
-const size_t _numt = _dynamic_array_spikemonitor_5_t.size();
-const int64_t _source_stop = 6;
-const int64_t _source_start = 4;
-const size_t _num_spikespace = 257;
+    const size_t _num_clock_t = 1;
+const size_t _num_source_t = 1;
 const size_t _num__source_i_Core_1_subgroup_6__source_i = 256;
 int32_t* const _array_spikemonitor_5_i = _dynamic_array_spikemonitor_5_i.empty()? 0 : &_dynamic_array_spikemonitor_5_i[0];
 const size_t _numi = _dynamic_array_spikemonitor_5_i.size();
-const int64_t __source_i_Core_1_subgroup_6__offset = 4;
-const size_t _num_clock_t = 1;
+const size_t _num_spikespace = 257;
 const size_t _numN = 1;
+const int64_t __source_i_Core_1_subgroup_6__offset = 4;
+double* const _array_spikemonitor_5_t = _dynamic_array_spikemonitor_5_t.empty()? 0 : &_dynamic_array_spikemonitor_5_t[0];
+const size_t _numt = _dynamic_array_spikemonitor_5_t.size();
+const int64_t _source_start = 4;
+const int64_t _source_stop = 6;
 const size_t _numcount = 2;
 const size_t _num_source_idx = 2;
     ///// POINTERS ////////////
         
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    double* __restrict  _ptr_array_spikemonitor_5_t = _array_spikemonitor_5_t;
-    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
     int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
     int32_t* __restrict  _ptr_array_spikemonitor_5_i = _array_spikemonitor_5_i;
+    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
     int32_t*   _ptr_array_spikemonitor_5_N = _array_spikemonitor_5_N;
+    double* __restrict  _ptr_array_spikemonitor_5_t = _array_spikemonitor_5_t;
     int32_t* __restrict  _ptr_array_spikemonitor_5_count = _array_spikemonitor_5_count;
     int32_t* __restrict  _ptr_array_spikemonitor_5__source_idx = _array_spikemonitor_5__source_idx;
 
@@ -158,27 +158,27 @@ const size_t _num_source_idx = 2;
 void _debugmsg_spikemonitor_5_codeobject()
 {
     using namespace brian;
-    const size_t _num_source_t = 1;
-double* const _array_spikemonitor_5_t = _dynamic_array_spikemonitor_5_t.empty()? 0 : &_dynamic_array_spikemonitor_5_t[0];
-const size_t _numt = _dynamic_array_spikemonitor_5_t.size();
-const int64_t _source_stop = 6;
-const int64_t _source_start = 4;
-const size_t _num_spikespace = 257;
+    const size_t _num_clock_t = 1;
+const size_t _num_source_t = 1;
 const size_t _num__source_i_Core_1_subgroup_6__source_i = 256;
 int32_t* const _array_spikemonitor_5_i = _dynamic_array_spikemonitor_5_i.empty()? 0 : &_dynamic_array_spikemonitor_5_i[0];
 const size_t _numi = _dynamic_array_spikemonitor_5_i.size();
-const int64_t __source_i_Core_1_subgroup_6__offset = 4;
-const size_t _num_clock_t = 1;
+const size_t _num_spikespace = 257;
 const size_t _numN = 1;
+const int64_t __source_i_Core_1_subgroup_6__offset = 4;
+double* const _array_spikemonitor_5_t = _dynamic_array_spikemonitor_5_t.empty()? 0 : &_dynamic_array_spikemonitor_5_t[0];
+const size_t _numt = _dynamic_array_spikemonitor_5_t.size();
+const int64_t _source_start = 4;
+const int64_t _source_stop = 6;
 const size_t _numcount = 2;
 const size_t _num_source_idx = 2;
         
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    double* __restrict  _ptr_array_spikemonitor_5_t = _array_spikemonitor_5_t;
-    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
     int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
     int32_t* __restrict  _ptr_array_spikemonitor_5_i = _array_spikemonitor_5_i;
+    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
     int32_t*   _ptr_array_spikemonitor_5_N = _array_spikemonitor_5_N;
+    double* __restrict  _ptr_array_spikemonitor_5_t = _array_spikemonitor_5_t;
     int32_t* __restrict  _ptr_array_spikemonitor_5_count = _array_spikemonitor_5_count;
     int32_t* __restrict  _ptr_array_spikemonitor_5__source_idx = _array_spikemonitor_5__source_idx;
 

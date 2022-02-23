@@ -11,6 +11,10 @@
 ////// SUPPORT CODE ///////
 namespace {
         
+    static inline int64_t _timestep(double t, double dt)
+    {
+        return (int64_t)((t + 1e-3*dt)/dt); 
+    }
     template <typename T>
     static inline T _clip(const T value, const double a_min, const double a_max)
     {
@@ -19,10 +23,6 @@ namespace {
         if (value > a_max)
             return a_max;
         return value;
-    }
-    static inline int64_t _timestep(double t, double dt)
-    {
-        return (int64_t)((t + 1e-3*dt)/dt); 
     }
     template < typename T1, typename T2 > struct _higher_type;
     template < > struct _higher_type<int,int> { typedef int type; };
@@ -91,106 +91,106 @@ void _run_Core_1_stateupdater_1_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _numIth = 1;
-const size_t _numI_syn_gaba_a = 256;
-const size_t _numI_g_syn_nmda = 256;
-const size_t _numI_g_syn_gaba_a = 256;
+    const size_t _numI_syn_ampa = 256;
 const size_t _numkp = 1;
+const size_t _numI_g_syn_ampa = 256;
+const size_t _numC_syn_gaba_b = 256;
+const size_t _numI_g_syn_nmda = 256;
+const size_t _numkn = 1;
+const size_t _numI_tau_syn_gaba_b = 256;
+const size_t _numlastspike = 256;
+const int64_t N = 256;
+const size_t _numC_syn_nmda = 256;
+const size_t _numI_tau_syn_nmda = 256;
+const size_t _numI_syn_nmda = 256;
+const size_t _numIconst = 256;
+const size_t _numItau = 1;
 const size_t _numItauahp = 1;
+const size_t _numIath = 1;
+const size_t _numIanorm = 1;
+const size_t _numI_g_syn_gaba_b = 256;
+const size_t _numI_syn_gaba_a = 256;
+const size_t _numIth = 1;
+const size_t _numrefP = 1;
+const size_t _numI_syn_gaba_b = 256;
+const size_t _numC_syn_ampa = 256;
+const size_t _numIthahp = 1;
+const size_t _numI_g_syn_gaba_a = 256;
+const size_t _numIo = 1;
+const size_t _numdt = 1;
+const size_t _numCahp = 1;
 const double amp = 1.0;
-const size_t _numI_syn_ampa = 256;
+const size_t _numImem = 256;
+const size_t _numI_tau_syn_gaba_a = 256;
+const size_t _numCmem = 1;
+const size_t _numIahp = 256;
+const size_t _numt = 1;
+const size_t _numnot_refractory = 256;
+const size_t _numIagain = 1;
 const size_t _numC_syn_gaba_a = 256;
 const size_t _numI_tau_syn_ampa = 256;
-const size_t _numIthahp = 1;
-const size_t _numC_syn_gaba_b = 256;
-const size_t _numItau = 1;
 const size_t _numUt = 1;
-const size_t _numI_tau_syn_nmda = 256;
-const size_t _numIahp = 256;
-const size_t _numlastspike = 256;
-const size_t _numC_syn_nmda = 256;
-const size_t _numIath = 1;
-const size_t _numI_g_syn_gaba_b = 256;
-const size_t _numIconst = 256;
-const size_t _numkn = 1;
-const size_t _numt = 1;
-const size_t _numIagain = 1;
-const size_t _numnot_refractory = 256;
-const size_t _numIanorm = 1;
-const size_t _numI_tau_syn_gaba_b = 256;
-const size_t _numI_syn_nmda = 256;
-const size_t _numCahp = 1;
-const size_t _numdt = 1;
-const size_t _numIo = 1;
-const size_t _numI_syn_gaba_b = 256;
-const size_t _numCmem = 1;
-const size_t _numrefP = 1;
-const size_t _numC_syn_ampa = 256;
-const size_t _numI_g_syn_ampa = 256;
-const int64_t N = 256;
-const size_t _numI_tau_syn_gaba_a = 256;
-const size_t _numImem = 256;
     ///// POINTERS ////////////
         
-    double*   _ptr_array_Core_1_Ith = _array_Core_1_Ith;
-    double* __restrict  _ptr_array_Core_1_I_syn_gaba_a = _array_Core_1_I_syn_gaba_a;
-    double* __restrict  _ptr_array_Core_1_I_g_syn_nmda = _array_Core_1_I_g_syn_nmda;
-    double* __restrict  _ptr_array_Core_1_I_g_syn_gaba_a = _array_Core_1_I_g_syn_gaba_a;
-    double*   _ptr_array_Core_1_kp = _array_Core_1_kp;
-    double*   _ptr_array_Core_1_Itauahp = _array_Core_1_Itauahp;
     double* __restrict  _ptr_array_Core_1_I_syn_ampa = _array_Core_1_I_syn_ampa;
-    double* __restrict  _ptr_array_Core_1_C_syn_gaba_a = _array_Core_1_C_syn_gaba_a;
-    double* __restrict  _ptr_array_Core_1_I_tau_syn_ampa = _array_Core_1_I_tau_syn_ampa;
-    double*   _ptr_array_Core_1_Ithahp = _array_Core_1_Ithahp;
+    double*   _ptr_array_Core_1_kp = _array_Core_1_kp;
+    double* __restrict  _ptr_array_Core_1_I_g_syn_ampa = _array_Core_1_I_g_syn_ampa;
     double* __restrict  _ptr_array_Core_1_C_syn_gaba_b = _array_Core_1_C_syn_gaba_b;
-    double*   _ptr_array_Core_1_Itau = _array_Core_1_Itau;
-    double*   _ptr_array_Core_1_Ut = _array_Core_1_Ut;
-    double* __restrict  _ptr_array_Core_1_I_tau_syn_nmda = _array_Core_1_I_tau_syn_nmda;
-    double* __restrict  _ptr_array_Core_1_Iahp = _array_Core_1_Iahp;
+    double* __restrict  _ptr_array_Core_1_I_g_syn_nmda = _array_Core_1_I_g_syn_nmda;
+    double*   _ptr_array_Core_1_kn = _array_Core_1_kn;
+    double* __restrict  _ptr_array_Core_1_I_tau_syn_gaba_b = _array_Core_1_I_tau_syn_gaba_b;
     double* __restrict  _ptr_array_Core_1_lastspike = _array_Core_1_lastspike;
     double* __restrict  _ptr_array_Core_1_C_syn_nmda = _array_Core_1_C_syn_nmda;
-    double*   _ptr_array_Core_1_Iath = _array_Core_1_Iath;
-    double* __restrict  _ptr_array_Core_1_I_g_syn_gaba_b = _array_Core_1_I_g_syn_gaba_b;
-    double* __restrict  _ptr_array_Core_1_Iconst = _array_Core_1_Iconst;
-    double*   _ptr_array_Core_1_kn = _array_Core_1_kn;
-    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    double*   _ptr_array_Core_1_Iagain = _array_Core_1_Iagain;
-    char* __restrict  _ptr_array_Core_1_not_refractory = _array_Core_1_not_refractory;
-    double*   _ptr_array_Core_1_Ianorm = _array_Core_1_Ianorm;
-    double* __restrict  _ptr_array_Core_1_I_tau_syn_gaba_b = _array_Core_1_I_tau_syn_gaba_b;
+    double* __restrict  _ptr_array_Core_1_I_tau_syn_nmda = _array_Core_1_I_tau_syn_nmda;
     double* __restrict  _ptr_array_Core_1_I_syn_nmda = _array_Core_1_I_syn_nmda;
-    double*   _ptr_array_Core_1_Cahp = _array_Core_1_Cahp;
-    double*   _ptr_array_defaultclock_dt = _array_defaultclock_dt;
-    double*   _ptr_array_Core_1_Io = _array_Core_1_Io;
-    double* __restrict  _ptr_array_Core_1_I_syn_gaba_b = _array_Core_1_I_syn_gaba_b;
-    double*   _ptr_array_Core_1_Cmem = _array_Core_1_Cmem;
+    double* __restrict  _ptr_array_Core_1_Iconst = _array_Core_1_Iconst;
+    double*   _ptr_array_Core_1_Itau = _array_Core_1_Itau;
+    double*   _ptr_array_Core_1_Itauahp = _array_Core_1_Itauahp;
+    double*   _ptr_array_Core_1_Iath = _array_Core_1_Iath;
+    double*   _ptr_array_Core_1_Ianorm = _array_Core_1_Ianorm;
+    double* __restrict  _ptr_array_Core_1_I_g_syn_gaba_b = _array_Core_1_I_g_syn_gaba_b;
+    double* __restrict  _ptr_array_Core_1_I_syn_gaba_a = _array_Core_1_I_syn_gaba_a;
+    double*   _ptr_array_Core_1_Ith = _array_Core_1_Ith;
     double*   _ptr_array_Core_1_refP = _array_Core_1_refP;
+    double* __restrict  _ptr_array_Core_1_I_syn_gaba_b = _array_Core_1_I_syn_gaba_b;
     double* __restrict  _ptr_array_Core_1_C_syn_ampa = _array_Core_1_C_syn_ampa;
-    double* __restrict  _ptr_array_Core_1_I_g_syn_ampa = _array_Core_1_I_g_syn_ampa;
-    double* __restrict  _ptr_array_Core_1_I_tau_syn_gaba_a = _array_Core_1_I_tau_syn_gaba_a;
+    double*   _ptr_array_Core_1_Ithahp = _array_Core_1_Ithahp;
+    double* __restrict  _ptr_array_Core_1_I_g_syn_gaba_a = _array_Core_1_I_g_syn_gaba_a;
+    double*   _ptr_array_Core_1_Io = _array_Core_1_Io;
+    double*   _ptr_array_defaultclock_dt = _array_defaultclock_dt;
+    double*   _ptr_array_Core_1_Cahp = _array_Core_1_Cahp;
     double* __restrict  _ptr_array_Core_1_Imem = _array_Core_1_Imem;
+    double* __restrict  _ptr_array_Core_1_I_tau_syn_gaba_a = _array_Core_1_I_tau_syn_gaba_a;
+    double*   _ptr_array_Core_1_Cmem = _array_Core_1_Cmem;
+    double* __restrict  _ptr_array_Core_1_Iahp = _array_Core_1_Iahp;
+    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
+    char* __restrict  _ptr_array_Core_1_not_refractory = _array_Core_1_not_refractory;
+    double*   _ptr_array_Core_1_Iagain = _array_Core_1_Iagain;
+    double* __restrict  _ptr_array_Core_1_C_syn_gaba_a = _array_Core_1_C_syn_gaba_a;
+    double* __restrict  _ptr_array_Core_1_I_tau_syn_ampa = _array_Core_1_I_tau_syn_ampa;
+    double*   _ptr_array_Core_1_Ut = _array_Core_1_Ut;
 
 
     //// MAIN CODE ////////////
     // scalar code
     const size_t _vectorisation_idx = -1;
         
-    const double Io = _ptr_array_Core_1_Io[0];
-    const double t = _ptr_array_defaultclock_t[0];
-    const double Ith = _ptr_array_Core_1_Ith[0];
-    const double Iagain = _ptr_array_Core_1_Iagain[0];
-    const double Ianorm = _ptr_array_Core_1_Ianorm[0];
     const double kp = _ptr_array_Core_1_kp[0];
-    const double refP = _ptr_array_Core_1_refP[0];
-    const double Itau = _ptr_array_Core_1_Itau[0];
     const double Itauahp = _ptr_array_Core_1_Itauahp[0];
+    const double Io = _ptr_array_Core_1_Io[0];
+    const double Itau = _ptr_array_Core_1_Itau[0];
     const double Iath = _ptr_array_Core_1_Iath[0];
-    const double Ithahp = _ptr_array_Core_1_Ithahp[0];
-    const double Cahp = _ptr_array_Core_1_Cahp[0];
-    const double dt = _ptr_array_defaultclock_dt[0];
-    const double Ut = _ptr_array_Core_1_Ut[0];
-    const double Cmem = _ptr_array_Core_1_Cmem[0];
+    const double t = _ptr_array_defaultclock_t[0];
     const double kn = _ptr_array_Core_1_kn[0];
+    const double Ianorm = _ptr_array_Core_1_Ianorm[0];
+    const double Iagain = _ptr_array_Core_1_Iagain[0];
+    const double dt = _ptr_array_defaultclock_dt[0];
+    const double Cahp = _ptr_array_Core_1_Cahp[0];
+    const double Ith = _ptr_array_Core_1_Ith[0];
+    const double Cmem = _ptr_array_Core_1_Cmem[0];
+    const double refP = _ptr_array_Core_1_refP[0];
+    const double Ithahp = _ptr_array_Core_1_Ithahp[0];
+    const double Ut = _ptr_array_Core_1_Ut[0];
     const int64_t _lio_1 = _timestep(refP, dt);
     const double _lio_2 = 1.0f*(dt * ((0.5 * kn) + (0.5 * kp)))/Ut;
     const double _lio_3 = 2.0 * Io;
@@ -206,27 +206,27 @@ const size_t _numImem = 256;
         // vector code
         const size_t _vectorisation_idx = _idx;
                 
-        double I_syn_gaba_a = _ptr_array_Core_1_I_syn_gaba_a[_idx];
-        const double I_g_syn_gaba_a = _ptr_array_Core_1_I_g_syn_gaba_a[_idx];
-        const double I_g_syn_nmda = _ptr_array_Core_1_I_g_syn_nmda[_idx];
         double I_syn_ampa = _ptr_array_Core_1_I_syn_ampa[_idx];
-        const double C_syn_gaba_a = _ptr_array_Core_1_C_syn_gaba_a[_idx];
-        const double I_tau_syn_ampa = _ptr_array_Core_1_I_tau_syn_ampa[_idx];
+        const double I_g_syn_ampa = _ptr_array_Core_1_I_g_syn_ampa[_idx];
         const double C_syn_gaba_b = _ptr_array_Core_1_C_syn_gaba_b[_idx];
-        const double I_tau_syn_nmda = _ptr_array_Core_1_I_tau_syn_nmda[_idx];
-        double Iahp = _ptr_array_Core_1_Iahp[_idx];
+        const double I_g_syn_nmda = _ptr_array_Core_1_I_g_syn_nmda[_idx];
+        const double I_tau_syn_gaba_b = _ptr_array_Core_1_I_tau_syn_gaba_b[_idx];
         const double lastspike = _ptr_array_Core_1_lastspike[_idx];
         const double C_syn_nmda = _ptr_array_Core_1_C_syn_nmda[_idx];
-        const double I_g_syn_gaba_b = _ptr_array_Core_1_I_g_syn_gaba_b[_idx];
-        const double Iconst = _ptr_array_Core_1_Iconst[_idx];
-        char not_refractory = _ptr_array_Core_1_not_refractory[_idx];
-        const double I_tau_syn_gaba_b = _ptr_array_Core_1_I_tau_syn_gaba_b[_idx];
+        const double I_tau_syn_nmda = _ptr_array_Core_1_I_tau_syn_nmda[_idx];
         double I_syn_nmda = _ptr_array_Core_1_I_syn_nmda[_idx];
-        double I_syn_gaba_b = _ptr_array_Core_1_I_syn_gaba_b[_idx];
+        const double Iconst = _ptr_array_Core_1_Iconst[_idx];
+        const double I_g_syn_gaba_b = _ptr_array_Core_1_I_g_syn_gaba_b[_idx];
+        double I_syn_gaba_a = _ptr_array_Core_1_I_syn_gaba_a[_idx];
         const double C_syn_ampa = _ptr_array_Core_1_C_syn_ampa[_idx];
-        const double I_g_syn_ampa = _ptr_array_Core_1_I_g_syn_ampa[_idx];
-        const double I_tau_syn_gaba_a = _ptr_array_Core_1_I_tau_syn_gaba_a[_idx];
+        double I_syn_gaba_b = _ptr_array_Core_1_I_syn_gaba_b[_idx];
+        const double I_g_syn_gaba_a = _ptr_array_Core_1_I_g_syn_gaba_a[_idx];
         double Imem = _ptr_array_Core_1_Imem[_idx];
+        const double I_tau_syn_gaba_a = _ptr_array_Core_1_I_tau_syn_gaba_a[_idx];
+        double Iahp = _ptr_array_Core_1_Iahp[_idx];
+        char not_refractory = _ptr_array_Core_1_not_refractory[_idx];
+        const double C_syn_gaba_a = _ptr_array_Core_1_C_syn_gaba_a[_idx];
+        const double I_tau_syn_ampa = _ptr_array_Core_1_I_tau_syn_ampa[_idx];
         not_refractory = _timestep(t - lastspike, dt) >= _lio_1;
         const double _I_syn_ampa = I_syn_ampa + (1.0f*(_lio_2 * ((((I_tau_syn_ampa * (I_syn_ampa > Io)) + (Io * (I_syn_ampa <= Io))) * (_brian_pow(1.0 + (1.0f*((I_g_syn_ampa * (I_syn_ampa > Io)) + (Io * (I_syn_ampa <= Io)))/I_syn_ampa), - 1))) * (((- I_syn_ampa) + (_lio_3 * (I_syn_ampa <= Io))) - ((I_g_syn_ampa * (I_syn_ampa > Io)) + (Io * (I_syn_ampa <= Io))))))/C_syn_ampa);
         const double _I_syn_gaba_a = I_syn_gaba_a + (1.0f*(_lio_2 * ((((I_tau_syn_gaba_a * (I_syn_gaba_a > Io)) + (Io * (I_syn_gaba_a <= Io))) * (_brian_pow(1.0 + (1.0f*((I_g_syn_gaba_a * (I_syn_gaba_a > Io)) + (Io * (I_syn_gaba_a <= Io)))/I_syn_gaba_a), - 1))) * (((- I_syn_gaba_a) + (_lio_3 * (I_syn_gaba_a <= Io))) - ((I_g_syn_gaba_a * (I_syn_gaba_a > Io)) + (Io * (I_syn_gaba_a <= Io))))))/C_syn_gaba_a);
@@ -245,13 +245,13 @@ const size_t _numImem = 256;
         Iahp = _Iahp;
         if(not_refractory)
             Imem = _Imem;
-        _ptr_array_Core_1_Iahp[_idx] = Iahp;
-        _ptr_array_Core_1_I_syn_gaba_a[_idx] = I_syn_gaba_a;
-        _ptr_array_Core_1_not_refractory[_idx] = not_refractory;
         _ptr_array_Core_1_I_syn_ampa[_idx] = I_syn_ampa;
+        _ptr_array_Core_1_not_refractory[_idx] = not_refractory;
+        _ptr_array_Core_1_I_syn_gaba_a[_idx] = I_syn_gaba_a;
+        _ptr_array_Core_1_Imem[_idx] = Imem;
         _ptr_array_Core_1_I_syn_nmda[_idx] = I_syn_nmda;
         _ptr_array_Core_1_I_syn_gaba_b[_idx] = I_syn_gaba_b;
-        _ptr_array_Core_1_Imem[_idx] = Imem;
+        _ptr_array_Core_1_Iahp[_idx] = Iahp;
 
     }
 

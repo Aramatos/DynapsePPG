@@ -78,26 +78,26 @@ void _run_Core_3_resetter_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _numIahp = 256;
-const size_t _numIo = 1;
+    const size_t _numIo = 1;
 const size_t _numItauahp = 1;
-const size_t _num_spikespace = 257;
-const size_t _numIthahp = 1;
-const int64_t N = 256;
-const size_t _numIreset = 1;
 const size_t _numIca = 256;
+const size_t _numIreset = 1;
+const int64_t N = 256;
 const size_t _numImem = 256;
+const size_t _num_spikespace = 257;
+const size_t _numIahp = 256;
+const size_t _numIthahp = 1;
 const size_t _numnot_refractory = 256;
     ///// POINTERS ////////////
         
-    double* __restrict  _ptr_array_Core_3_Iahp = _array_Core_3_Iahp;
     double*   _ptr_array_Core_3_Io = _array_Core_3_Io;
     double*   _ptr_array_Core_3_Itauahp = _array_Core_3_Itauahp;
-    int32_t* __restrict  _ptr_array_Core_3__spikespace = _array_Core_3__spikespace;
-    double*   _ptr_array_Core_3_Ithahp = _array_Core_3_Ithahp;
-    double*   _ptr_array_Core_3_Ireset = _array_Core_3_Ireset;
     double* __restrict  _ptr_array_Core_3_Ica = _array_Core_3_Ica;
+    double*   _ptr_array_Core_3_Ireset = _array_Core_3_Ireset;
     double* __restrict  _ptr_array_Core_3_Imem = _array_Core_3_Imem;
+    int32_t* __restrict  _ptr_array_Core_3__spikespace = _array_Core_3__spikespace;
+    double* __restrict  _ptr_array_Core_3_Iahp = _array_Core_3_Iahp;
+    double*   _ptr_array_Core_3_Ithahp = _array_Core_3_Ithahp;
     char* __restrict  _ptr_array_Core_3_not_refractory = _array_Core_3_not_refractory;
 
 
@@ -109,9 +109,9 @@ const size_t _numnot_refractory = 256;
 	// scalar code
 	const size_t _vectorisation_idx = -1;
  	
+ const double Itauahp = _ptr_array_Core_3_Itauahp[0];
  const double Ireset = _ptr_array_Core_3_Ireset[0];
  const double Io = _ptr_array_Core_3_Io[0];
- const double Itauahp = _ptr_array_Core_3_Itauahp[0];
  const double Ithahp = _ptr_array_Core_3_Ithahp[0];
  const double _lio_1 = 1.0f*1.0/Itauahp;
 
@@ -123,15 +123,15 @@ const size_t _numnot_refractory = 256;
 		const size_t _idx = _events[_index_events];
 		const size_t _vectorisation_idx = _idx;
                 
-        double Iahp = _ptr_array_Core_3_Iahp[_idx];
         const double Ica = _ptr_array_Core_3_Ica[_idx];
+        double Iahp = _ptr_array_Core_3_Iahp[_idx];
         double Imem;
         Imem = Ireset;
         const double Ithahp_clip = (Ithahp * (Iahp > Io)) + (Io * (Iahp <= Io));
         const double Iahpmax = _lio_1 * (Ica * Ithahp_clip);
         Iahp += Iahpmax;
-        _ptr_array_Core_3_Iahp[_idx] = Iahp;
         _ptr_array_Core_3_Imem[_idx] = Imem;
+        _ptr_array_Core_3_Iahp[_idx] = Iahp;
 
 	}
 

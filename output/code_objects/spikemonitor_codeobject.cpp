@@ -78,28 +78,28 @@ void _run_spikemonitor_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _num_source_t = 1;
-const size_t _num_source_i = 256;
-double* const _array_spikemonitor_t = _dynamic_array_spikemonitor_t.empty()? 0 : &_dynamic_array_spikemonitor_t[0];
+    double* const _array_spikemonitor_t = _dynamic_array_spikemonitor_t.empty()? 0 : &_dynamic_array_spikemonitor_t[0];
 const size_t _numt = _dynamic_array_spikemonitor_t.size();
+const size_t _numcount = 2;
 const int64_t _source_stop = 2;
+const size_t _numN = 1;
+const size_t _num_source_t = 1;
 const int64_t _source_start = 0;
 const size_t _num_spikespace = 257;
+const size_t _num_clock_t = 1;
+const size_t _num_source_i = 256;
 int32_t* const _array_spikemonitor_i = _dynamic_array_spikemonitor_i.empty()? 0 : &_dynamic_array_spikemonitor_i[0];
 const size_t _numi = _dynamic_array_spikemonitor_i.size();
-const size_t _num_clock_t = 1;
-const size_t _numN = 1;
-const size_t _numcount = 2;
 const size_t _num_source_idx = 2;
     ///// POINTERS ////////////
         
-    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
     double* __restrict  _ptr_array_spikemonitor_t = _array_spikemonitor_t;
-    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
-    int32_t* __restrict  _ptr_array_spikemonitor_i = _array_spikemonitor_i;
-    int32_t*   _ptr_array_spikemonitor_N = _array_spikemonitor_N;
     int32_t* __restrict  _ptr_array_spikemonitor_count = _array_spikemonitor_count;
+    int32_t*   _ptr_array_spikemonitor_N = _array_spikemonitor_N;
+    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
+    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
+    int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
+    int32_t* __restrict  _ptr_array_spikemonitor_i = _array_spikemonitor_i;
     int32_t* __restrict  _ptr_array_spikemonitor__source_idx = _array_spikemonitor__source_idx;
 
 
@@ -156,27 +156,27 @@ const size_t _num_source_idx = 2;
 void _debugmsg_spikemonitor_codeobject()
 {
     using namespace brian;
-    const size_t _num_source_t = 1;
-const size_t _num_source_i = 256;
-double* const _array_spikemonitor_t = _dynamic_array_spikemonitor_t.empty()? 0 : &_dynamic_array_spikemonitor_t[0];
+    double* const _array_spikemonitor_t = _dynamic_array_spikemonitor_t.empty()? 0 : &_dynamic_array_spikemonitor_t[0];
 const size_t _numt = _dynamic_array_spikemonitor_t.size();
+const size_t _numcount = 2;
 const int64_t _source_stop = 2;
+const size_t _numN = 1;
+const size_t _num_source_t = 1;
 const int64_t _source_start = 0;
 const size_t _num_spikespace = 257;
+const size_t _num_clock_t = 1;
+const size_t _num_source_i = 256;
 int32_t* const _array_spikemonitor_i = _dynamic_array_spikemonitor_i.empty()? 0 : &_dynamic_array_spikemonitor_i[0];
 const size_t _numi = _dynamic_array_spikemonitor_i.size();
-const size_t _num_clock_t = 1;
-const size_t _numN = 1;
-const size_t _numcount = 2;
 const size_t _num_source_idx = 2;
         
-    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
     double* __restrict  _ptr_array_spikemonitor_t = _array_spikemonitor_t;
-    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
-    int32_t* __restrict  _ptr_array_spikemonitor_i = _array_spikemonitor_i;
-    int32_t*   _ptr_array_spikemonitor_N = _array_spikemonitor_N;
     int32_t* __restrict  _ptr_array_spikemonitor_count = _array_spikemonitor_count;
+    int32_t*   _ptr_array_spikemonitor_N = _array_spikemonitor_N;
+    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
+    int32_t* __restrict  _ptr_array_Core_1__spikespace = _array_Core_1__spikespace;
+    int32_t* __restrict  _ptr_array_Core_1_i = _array_Core_1_i;
+    int32_t* __restrict  _ptr_array_spikemonitor_i = _array_spikemonitor_i;
     int32_t* __restrict  _ptr_array_spikemonitor__source_idx = _array_spikemonitor__source_idx;
 
     std::cout << "Number of spikes: " << _ptr_array_spikemonitor_N[0] << endl;

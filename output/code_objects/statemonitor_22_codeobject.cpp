@@ -78,21 +78,21 @@ void _run_statemonitor_22_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _num_clock_t = 1;
-const size_t _num_source_I_syn_gaba_b = 256;
-const size_t _num_indices = 1;
+    const size_t _num_source_I_syn_gaba_b = 256;
+const size_t _num_clock_t = 1;
 double* const _array_statemonitor_22_t = _dynamic_array_statemonitor_22_t.empty()? 0 : &_dynamic_array_statemonitor_22_t[0];
 const size_t _numt = _dynamic_array_statemonitor_22_t.size();
 const size_t _numN = 1;
+const size_t _num_indices = 1;
 int32_t* const _array_GABA_B7__synaptic_post = _dynamic_array_GABA_B7__synaptic_post.empty()? 0 : &_dynamic_array_GABA_B7__synaptic_post[0];
 const size_t _num_postsynaptic_idx = _dynamic_array_GABA_B7__synaptic_post.size();
     ///// POINTERS ////////////
         
-    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
     double* __restrict  _ptr_array_Core_1_I_syn_gaba_b = _array_Core_1_I_syn_gaba_b;
-    int32_t*   _ptr_array_statemonitor_22__indices = _array_statemonitor_22__indices;
+    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
     double* __restrict  _ptr_array_statemonitor_22_t = _array_statemonitor_22_t;
     int32_t*   _ptr_array_statemonitor_22_N = _array_statemonitor_22_N;
+    int32_t*   _ptr_array_statemonitor_22__indices = _array_statemonitor_22__indices;
     int32_t* __restrict  _ptr_array_GABA_B7__synaptic_post = _array_GABA_B7__synaptic_post;
 
 

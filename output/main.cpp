@@ -72,9 +72,9 @@
 #include "code_objects/GABA_B9_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B9_pre_push_spikes.h"
 #include "code_objects/GABA_B9_synapses_create_generator_codeobject.h"
-#include "code_objects/inh_neuron_output_codeobject_1.h"
+#include "code_objects/inh_neuron_output_codeobject.h"
 #include "code_objects/InpSpikeGenerator_codeobject_1.h"
-#include "code_objects/mon_neuron_input_codeobject_1.h"
+#include "code_objects/mon_neuron_input_codeobject.h"
 #include "code_objects/NMDA1_post_codeobject_1.h"
 #include "code_objects/NMDA1_post_push_spikes.h"
 #include "code_objects/before_run_NMDA1_post_push_spikes.h"
@@ -96,22 +96,23 @@
 #include "code_objects/NMDA3_pre_push_spikes.h"
 #include "code_objects/before_run_NMDA3_pre_push_spikes.h"
 #include "code_objects/NMDA3_synapses_create_generator_codeobject.h"
-#include "code_objects/spikemonitor_3_codeobject.h"
-#include "code_objects/spikemonitor_4_codeobject.h"
-#include "code_objects/spikemonitor_5_codeobject.h"
+#include "code_objects/spikemonitor_1_codeobject.h"
+#include "code_objects/spikemonitor_2_codeobject.h"
+#include "code_objects/spikemonitor_codeobject.h"
+#include "code_objects/statemonitor_10_codeobject.h"
+#include "code_objects/statemonitor_11_codeobject.h"
+#include "code_objects/statemonitor_12_codeobject.h"
 #include "code_objects/statemonitor_13_codeobject.h"
-#include "code_objects/statemonitor_14_codeobject.h"
-#include "code_objects/statemonitor_15_codeobject.h"
-#include "code_objects/statemonitor_16_codeobject.h"
-#include "code_objects/statemonitor_17_codeobject.h"
-#include "code_objects/statemonitor_18_codeobject.h"
-#include "code_objects/statemonitor_19_codeobject.h"
-#include "code_objects/statemonitor_20_codeobject.h"
-#include "code_objects/statemonitor_21_codeobject.h"
-#include "code_objects/statemonitor_22_codeobject.h"
-#include "code_objects/statemonitor_23_codeobject.h"
-#include "code_objects/statemonitor_24_codeobject.h"
-#include "code_objects/statemonitor_25_codeobject.h"
+#include "code_objects/statemonitor_1_codeobject.h"
+#include "code_objects/statemonitor_2_codeobject.h"
+#include "code_objects/statemonitor_3_codeobject.h"
+#include "code_objects/statemonitor_4_codeobject.h"
+#include "code_objects/statemonitor_5_codeobject.h"
+#include "code_objects/statemonitor_6_codeobject.h"
+#include "code_objects/statemonitor_7_codeobject.h"
+#include "code_objects/statemonitor_8_codeobject.h"
+#include "code_objects/statemonitor_9_codeobject.h"
+#include "code_objects/statemonitor_codeobject.h"
 
 
 #include <iostream>
@@ -960,7 +961,7 @@ int main(int argc, char **argv)
                         
                         for(int i=0; i<_dynamic_array_AMPA0_weight.size(); i++)
                         {
-                            _dynamic_array_AMPA0_weight[i] = 300;
+                            _dynamic_array_AMPA0_weight[i] = 500;
                         }
                         
         _run_NMDA1_synapses_create_generator_codeobject();
@@ -992,7 +993,7 @@ int main(int argc, char **argv)
                         
                         for(int i=0; i<_dynamic_array_GABA_B4_weight.size(); i++)
                         {
-                            _dynamic_array_GABA_B4_weight[i] = 100;
+                            _dynamic_array_GABA_B4_weight[i] = 500;
                         }
                         
         _run_GABA_B5_synapses_create_generator_codeobject();
@@ -1000,7 +1001,7 @@ int main(int argc, char **argv)
                         
                         for(int i=0; i<_dynamic_array_GABA_B5_weight.size(); i++)
                         {
-                            _dynamic_array_GABA_B5_weight[i] = 200;
+                            _dynamic_array_GABA_B5_weight[i] = 500;
                         }
                         
         _run_GABA_B6_synapses_create_generator_codeobject();
@@ -1008,7 +1009,7 @@ int main(int argc, char **argv)
                         
                         for(int i=0; i<_dynamic_array_GABA_B6_weight.size(); i++)
                         {
-                            _dynamic_array_GABA_B6_weight[i] = 300;
+                            _dynamic_array_GABA_B6_weight[i] = 500;
                         }
                         
         _run_GABA_B7_synapses_create_generator_codeobject();
@@ -1037,36 +1038,36 @@ int main(int argc, char **argv)
                         
         
                         
-                        for(int i=0; i<_num__array_statemonitor_13__indices; i++)
+                        for(int i=0; i<_num__array_statemonitor__indices; i++)
                         {
-                            _array_statemonitor_13__indices[i] = _static_array__array_statemonitor_13__indices[i];
+                            _array_statemonitor__indices[i] = _static_array__array_statemonitor__indices[i];
                         }
                         
         
                         
-                        for(int i=0; i<_num__array_statemonitor_14__indices; i++)
+                        for(int i=0; i<_num__array_statemonitor_1__indices; i++)
                         {
-                            _array_statemonitor_14__indices[i] = _static_array__array_statemonitor_14__indices[i];
+                            _array_statemonitor_1__indices[i] = _static_array__array_statemonitor_1__indices[i];
                         }
                         
         
                         
-                        for(int i=0; i<_num__array_statemonitor_15__indices; i++)
+                        for(int i=0; i<_num__array_statemonitor_2__indices; i++)
                         {
-                            _array_statemonitor_15__indices[i] = _static_array__array_statemonitor_15__indices[i];
+                            _array_statemonitor_2__indices[i] = _static_array__array_statemonitor_2__indices[i];
                         }
                         
-        _array_statemonitor_16__indices[0] = 0;
-        _array_statemonitor_17__indices[0] = 0;
-        _array_statemonitor_18__indices[0] = 0;
-        _array_statemonitor_19__indices[0] = 0;
-        _array_statemonitor_20__indices[0] = 0;
-        _array_statemonitor_21__indices[0] = 0;
-        _array_statemonitor_22__indices[0] = 0;
-        _array_statemonitor_23__indices[0] = 0;
-        _array_statemonitor_24__indices[0] = 0;
-        _array_statemonitor_25__indices[0] = 0;
-        _array_statemonitor_26__indices[0] = 0;
+        _array_statemonitor_3__indices[0] = 0;
+        _array_statemonitor_4__indices[0] = 0;
+        _array_statemonitor_5__indices[0] = 0;
+        _array_statemonitor_6__indices[0] = 0;
+        _array_statemonitor_7__indices[0] = 0;
+        _array_statemonitor_8__indices[0] = 0;
+        _array_statemonitor_9__indices[0] = 0;
+        _array_statemonitor_10__indices[0] = 0;
+        _array_statemonitor_11__indices[0] = 0;
+        _array_statemonitor_12__indices[0] = 0;
+        _array_statemonitor_13__indices[0] = 0;
         _array_defaultclock_timestep[0] = 0;
         _array_defaultclock_t[0] = 0.0;
         _array_InpSpikeGenerator__lastindex[0] = 0;
@@ -1099,19 +1100,20 @@ int main(int argc, char **argv)
         _before_run_NMDA2_post_push_spikes();
         _before_run_NMDA3_post_push_spikes();
         network_1.clear();
+        network_1.add(&defaultclock, _run_statemonitor_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_1_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_10_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_11_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_12_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_13_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_14_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_15_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_16_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_17_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_18_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_19_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_20_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_21_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_22_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_23_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_24_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_25_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_2_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_3_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_4_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_5_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_6_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_7_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_8_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_9_codeobject);
         network_1.add(&defaultclock, _run_Core_0_stateupdater_1_codeobject);
         network_1.add(&defaultclock, _run_Core_1_stateupdater_1_codeobject);
         network_1.add(&defaultclock, _run_Core_2_stateupdater_1_codeobject);
@@ -1121,11 +1123,11 @@ int main(int argc, char **argv)
         network_1.add(&defaultclock, _run_Core_2_thresholder_1_codeobject);
         network_1.add(&defaultclock, _run_Core_3_thresholder_1_codeobject);
         network_1.add(&defaultclock, _run_InpSpikeGenerator_codeobject_1);
-        network_1.add(&defaultclock, _run_mon_neuron_input_codeobject_1);
-        network_1.add(&defaultclock, _run_inh_neuron_output_codeobject_1);
-        network_1.add(&defaultclock, _run_spikemonitor_3_codeobject);
-        network_1.add(&defaultclock, _run_spikemonitor_4_codeobject);
-        network_1.add(&defaultclock, _run_spikemonitor_5_codeobject);
+        network_1.add(&defaultclock, _run_mon_neuron_input_codeobject);
+        network_1.add(&defaultclock, _run_inh_neuron_output_codeobject);
+        network_1.add(&defaultclock, _run_spikemonitor_codeobject);
+        network_1.add(&defaultclock, _run_spikemonitor_1_codeobject);
+        network_1.add(&defaultclock, _run_spikemonitor_2_codeobject);
         network_1.add(&defaultclock, _run_AMPA0_pre_push_spikes);
         network_1.add(&defaultclock, _run_AMPA0_pre_codeobject_1);
         network_1.add(&defaultclock, _run_GABA_B4_pre_push_spikes);
@@ -1176,23 +1178,23 @@ int main(int argc, char **argv)
         _after_run_Core_2_thresholder_1_codeobject();
         _after_run_Core_3_thresholder_1_codeobject();
         #ifdef DEBUG
-        _debugmsg_mon_neuron_input_codeobject_1();
+        _debugmsg_mon_neuron_input_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_inh_neuron_output_codeobject_1();
+        _debugmsg_inh_neuron_output_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_spikemonitor_3_codeobject();
+        _debugmsg_spikemonitor_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_spikemonitor_4_codeobject();
+        _debugmsg_spikemonitor_1_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_spikemonitor_5_codeobject();
+        _debugmsg_spikemonitor_2_codeobject();
         #endif
         
         #ifdef DEBUG

@@ -569,34 +569,52 @@ before_run_NMDA3_pre_push_spikes.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-inh_neuron_output_codeobject_1.o: \
- code_objects/inh_neuron_output_codeobject_1.cpp \
- code_objects/inh_neuron_output_codeobject_1.h objects.h \
- synapses_classes.h brianlib/spikequeue.h brianlib/stdint_compat.h \
- brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
- brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
- brianlib/common_math.h
-mon_neuron_input_codeobject_1.o: \
- code_objects/mon_neuron_input_codeobject_1.cpp \
- code_objects/mon_neuron_input_codeobject_1.h objects.h \
- synapses_classes.h brianlib/spikequeue.h brianlib/stdint_compat.h \
- brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
- brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
- brianlib/common_math.h
-spikemonitor_3_codeobject.o: code_objects/spikemonitor_3_codeobject.cpp \
- code_objects/spikemonitor_3_codeobject.h objects.h synapses_classes.h \
+inh_neuron_output_codeobject.o: \
+ code_objects/inh_neuron_output_codeobject.cpp \
+ code_objects/inh_neuron_output_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-spikemonitor_4_codeobject.o: code_objects/spikemonitor_4_codeobject.cpp \
- code_objects/spikemonitor_4_codeobject.h objects.h synapses_classes.h \
+mon_neuron_input_codeobject.o: \
+ code_objects/mon_neuron_input_codeobject.cpp \
+ code_objects/mon_neuron_input_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-spikemonitor_5_codeobject.o: code_objects/spikemonitor_5_codeobject.cpp \
- code_objects/spikemonitor_5_codeobject.h objects.h synapses_classes.h \
+spikemonitor_1_codeobject.o: code_objects/spikemonitor_1_codeobject.cpp \
+ code_objects/spikemonitor_1_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
+ brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
+ brianlib/common_math.h
+spikemonitor_2_codeobject.o: code_objects/spikemonitor_2_codeobject.cpp \
+ code_objects/spikemonitor_2_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
+ brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
+ brianlib/common_math.h
+spikemonitor_codeobject.o: code_objects/spikemonitor_codeobject.cpp \
+ code_objects/spikemonitor_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
+ brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
+ brianlib/common_math.h
+statemonitor_10_codeobject.o: code_objects/statemonitor_10_codeobject.cpp \
+ code_objects/statemonitor_10_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
+ brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
+ brianlib/common_math.h
+statemonitor_11_codeobject.o: code_objects/statemonitor_11_codeobject.cpp \
+ code_objects/statemonitor_11_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
+ brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
+ brianlib/common_math.h
+statemonitor_12_codeobject.o: code_objects/statemonitor_12_codeobject.cpp \
+ code_objects/statemonitor_12_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -607,74 +625,62 @@ statemonitor_13_codeobject.o: code_objects/statemonitor_13_codeobject.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_14_codeobject.o: code_objects/statemonitor_14_codeobject.cpp \
- code_objects/statemonitor_14_codeobject.h objects.h synapses_classes.h \
+statemonitor_1_codeobject.o: code_objects/statemonitor_1_codeobject.cpp \
+ code_objects/statemonitor_1_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_15_codeobject.o: code_objects/statemonitor_15_codeobject.cpp \
- code_objects/statemonitor_15_codeobject.h objects.h synapses_classes.h \
+statemonitor_2_codeobject.o: code_objects/statemonitor_2_codeobject.cpp \
+ code_objects/statemonitor_2_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_16_codeobject.o: code_objects/statemonitor_16_codeobject.cpp \
- code_objects/statemonitor_16_codeobject.h objects.h synapses_classes.h \
+statemonitor_3_codeobject.o: code_objects/statemonitor_3_codeobject.cpp \
+ code_objects/statemonitor_3_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_17_codeobject.o: code_objects/statemonitor_17_codeobject.cpp \
- code_objects/statemonitor_17_codeobject.h objects.h synapses_classes.h \
+statemonitor_4_codeobject.o: code_objects/statemonitor_4_codeobject.cpp \
+ code_objects/statemonitor_4_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_18_codeobject.o: code_objects/statemonitor_18_codeobject.cpp \
- code_objects/statemonitor_18_codeobject.h objects.h synapses_classes.h \
+statemonitor_5_codeobject.o: code_objects/statemonitor_5_codeobject.cpp \
+ code_objects/statemonitor_5_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_19_codeobject.o: code_objects/statemonitor_19_codeobject.cpp \
- code_objects/statemonitor_19_codeobject.h objects.h synapses_classes.h \
+statemonitor_6_codeobject.o: code_objects/statemonitor_6_codeobject.cpp \
+ code_objects/statemonitor_6_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_20_codeobject.o: code_objects/statemonitor_20_codeobject.cpp \
- code_objects/statemonitor_20_codeobject.h objects.h synapses_classes.h \
+statemonitor_7_codeobject.o: code_objects/statemonitor_7_codeobject.cpp \
+ code_objects/statemonitor_7_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_21_codeobject.o: code_objects/statemonitor_21_codeobject.cpp \
- code_objects/statemonitor_21_codeobject.h objects.h synapses_classes.h \
+statemonitor_8_codeobject.o: code_objects/statemonitor_8_codeobject.cpp \
+ code_objects/statemonitor_8_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_22_codeobject.o: code_objects/statemonitor_22_codeobject.cpp \
- code_objects/statemonitor_22_codeobject.h objects.h synapses_classes.h \
+statemonitor_9_codeobject.o: code_objects/statemonitor_9_codeobject.cpp \
+ code_objects/statemonitor_9_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_23_codeobject.o: code_objects/statemonitor_23_codeobject.cpp \
- code_objects/statemonitor_23_codeobject.h objects.h synapses_classes.h \
- brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
- brianlib/stdint_compat.h brianlib/dynamic_array.h \
- brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
- brianlib/common_math.h
-statemonitor_24_codeobject.o: code_objects/statemonitor_24_codeobject.cpp \
- code_objects/statemonitor_24_codeobject.h objects.h synapses_classes.h \
- brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
- brianlib/stdint_compat.h brianlib/dynamic_array.h \
- brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
- brianlib/common_math.h
-statemonitor_25_codeobject.o: code_objects/statemonitor_25_codeobject.cpp \
- code_objects/statemonitor_25_codeobject.h objects.h synapses_classes.h \
+statemonitor_codeobject.o: code_objects/statemonitor_codeobject.cpp \
+ code_objects/statemonitor_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -748,9 +754,9 @@ main.o: main.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/GABA_B9_pre_push_spikes.h \
  code_objects/before_run_GABA_B9_pre_push_spikes.h \
  code_objects/GABA_B9_synapses_create_generator_codeobject.h \
- code_objects/inh_neuron_output_codeobject_1.h \
+ code_objects/inh_neuron_output_codeobject.h \
  code_objects/InpSpikeGenerator_codeobject_1.h \
- code_objects/mon_neuron_input_codeobject_1.h \
+ code_objects/mon_neuron_input_codeobject.h \
  code_objects/NMDA1_post_codeobject_1.h \
  code_objects/NMDA1_post_push_spikes.h \
  code_objects/before_run_NMDA1_post_push_spikes.h \
@@ -772,22 +778,23 @@ main.o: main.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/NMDA3_pre_push_spikes.h \
  code_objects/before_run_NMDA3_pre_push_spikes.h \
  code_objects/NMDA3_synapses_create_generator_codeobject.h \
- code_objects/spikemonitor_3_codeobject.h \
- code_objects/spikemonitor_4_codeobject.h \
- code_objects/spikemonitor_5_codeobject.h \
+ code_objects/spikemonitor_1_codeobject.h \
+ code_objects/spikemonitor_2_codeobject.h \
+ code_objects/spikemonitor_codeobject.h \
+ code_objects/statemonitor_10_codeobject.h \
+ code_objects/statemonitor_11_codeobject.h \
+ code_objects/statemonitor_12_codeobject.h \
  code_objects/statemonitor_13_codeobject.h \
- code_objects/statemonitor_14_codeobject.h \
- code_objects/statemonitor_15_codeobject.h \
- code_objects/statemonitor_16_codeobject.h \
- code_objects/statemonitor_17_codeobject.h \
- code_objects/statemonitor_18_codeobject.h \
- code_objects/statemonitor_19_codeobject.h \
- code_objects/statemonitor_20_codeobject.h \
- code_objects/statemonitor_21_codeobject.h \
- code_objects/statemonitor_22_codeobject.h \
- code_objects/statemonitor_23_codeobject.h \
- code_objects/statemonitor_24_codeobject.h \
- code_objects/statemonitor_25_codeobject.h
+ code_objects/statemonitor_1_codeobject.h \
+ code_objects/statemonitor_2_codeobject.h \
+ code_objects/statemonitor_3_codeobject.h \
+ code_objects/statemonitor_4_codeobject.h \
+ code_objects/statemonitor_5_codeobject.h \
+ code_objects/statemonitor_6_codeobject.h \
+ code_objects/statemonitor_7_codeobject.h \
+ code_objects/statemonitor_8_codeobject.h \
+ code_objects/statemonitor_9_codeobject.h \
+ code_objects/statemonitor_codeobject.h
 network.o: network.cpp network.h brianlib/clocks.h \
  brianlib/stdint_compat.h
 objects.o: objects.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
@@ -844,9 +851,9 @@ run.o: run.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/GABA_B9_pre_codeobject_1.h \
  code_objects/GABA_B9_pre_push_spikes.h \
  code_objects/GABA_B9_synapses_create_generator_codeobject.h \
- code_objects/inh_neuron_output_codeobject_1.h \
+ code_objects/inh_neuron_output_codeobject.h \
  code_objects/InpSpikeGenerator_codeobject_1.h \
- code_objects/mon_neuron_input_codeobject_1.h \
+ code_objects/mon_neuron_input_codeobject.h \
  code_objects/NMDA1_post_codeobject_1.h \
  code_objects/NMDA1_post_push_spikes.h \
  code_objects/NMDA1_pre_codeobject_1.h \
@@ -862,20 +869,21 @@ run.o: run.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/NMDA3_pre_codeobject_1.h \
  code_objects/NMDA3_pre_push_spikes.h \
  code_objects/NMDA3_synapses_create_generator_codeobject.h \
- code_objects/spikemonitor_3_codeobject.h \
- code_objects/spikemonitor_4_codeobject.h \
- code_objects/spikemonitor_5_codeobject.h \
+ code_objects/spikemonitor_1_codeobject.h \
+ code_objects/spikemonitor_2_codeobject.h \
+ code_objects/spikemonitor_codeobject.h \
+ code_objects/statemonitor_10_codeobject.h \
+ code_objects/statemonitor_11_codeobject.h \
+ code_objects/statemonitor_12_codeobject.h \
  code_objects/statemonitor_13_codeobject.h \
- code_objects/statemonitor_14_codeobject.h \
- code_objects/statemonitor_15_codeobject.h \
- code_objects/statemonitor_16_codeobject.h \
- code_objects/statemonitor_17_codeobject.h \
- code_objects/statemonitor_18_codeobject.h \
- code_objects/statemonitor_19_codeobject.h \
- code_objects/statemonitor_20_codeobject.h \
- code_objects/statemonitor_21_codeobject.h \
- code_objects/statemonitor_22_codeobject.h \
- code_objects/statemonitor_23_codeobject.h \
- code_objects/statemonitor_24_codeobject.h \
- code_objects/statemonitor_25_codeobject.h
+ code_objects/statemonitor_1_codeobject.h \
+ code_objects/statemonitor_2_codeobject.h \
+ code_objects/statemonitor_3_codeobject.h \
+ code_objects/statemonitor_4_codeobject.h \
+ code_objects/statemonitor_5_codeobject.h \
+ code_objects/statemonitor_6_codeobject.h \
+ code_objects/statemonitor_7_codeobject.h \
+ code_objects/statemonitor_8_codeobject.h \
+ code_objects/statemonitor_9_codeobject.h \
+ code_objects/statemonitor_codeobject.h
 synapses_classes.o: synapses_classes.cpp

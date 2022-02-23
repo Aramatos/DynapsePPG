@@ -80,24 +80,24 @@ void _run_AMPA0_pre_codeobject_1()
 
 
     ///// CONSTANTS ///////////
-    const size_t _numI_tau_syn_ampa_post = 256;
-const size_t _numI_syn_ampa_post = 256;
+    int32_t* const _array_AMPA0__synaptic_pre = _dynamic_array_AMPA0__synaptic_pre.empty()? 0 : &_dynamic_array_AMPA0__synaptic_pre[0];
+const size_t _num_synaptic_pre = _dynamic_array_AMPA0__synaptic_pre.size();
+const size_t _numI_wo_syn_ampa_post = 256;
+const size_t _numI_tau_syn_ampa_post = 256;
 const size_t _numI_g_syn_ampa_post = 256;
+const size_t _numI_syn_ampa_post = 256;
 double* const _array_AMPA0_weight = _dynamic_array_AMPA0_weight.empty()? 0 : &_dynamic_array_AMPA0_weight[0];
 const size_t _numweight = _dynamic_array_AMPA0_weight.size();
-const size_t _numI_wo_syn_ampa_post = 256;
-int32_t* const _array_AMPA0__synaptic_pre = _dynamic_array_AMPA0__synaptic_pre.empty()? 0 : &_dynamic_array_AMPA0__synaptic_pre[0];
-const size_t _num_synaptic_pre = _dynamic_array_AMPA0__synaptic_pre.size();
 int32_t* const _array_AMPA0__synaptic_post = _dynamic_array_AMPA0__synaptic_post.empty()? 0 : &_dynamic_array_AMPA0__synaptic_post[0];
 const size_t _num_postsynaptic_idx = _dynamic_array_AMPA0__synaptic_post.size();
     ///// POINTERS ////////////
         
-    double* __restrict  _ptr_array_Core_1_I_tau_syn_ampa = _array_Core_1_I_tau_syn_ampa;
-    double* __restrict  _ptr_array_Core_1_I_syn_ampa = _array_Core_1_I_syn_ampa;
-    double* __restrict  _ptr_array_Core_1_I_g_syn_ampa = _array_Core_1_I_g_syn_ampa;
-    double* __restrict  _ptr_array_AMPA0_weight = _array_AMPA0_weight;
-    double* __restrict  _ptr_array_Core_1_I_wo_syn_ampa = _array_Core_1_I_wo_syn_ampa;
     int32_t* __restrict  _ptr_array_AMPA0__synaptic_pre = _array_AMPA0__synaptic_pre;
+    double* __restrict  _ptr_array_Core_1_I_wo_syn_ampa = _array_Core_1_I_wo_syn_ampa;
+    double* __restrict  _ptr_array_Core_1_I_tau_syn_ampa = _array_Core_1_I_tau_syn_ampa;
+    double* __restrict  _ptr_array_Core_1_I_g_syn_ampa = _array_Core_1_I_g_syn_ampa;
+    double* __restrict  _ptr_array_Core_1_I_syn_ampa = _array_Core_1_I_syn_ampa;
+    double* __restrict  _ptr_array_AMPA0_weight = _array_AMPA0_weight;
     int32_t* __restrict  _ptr_array_AMPA0__synaptic_post = _array_AMPA0__synaptic_post;
 
 
@@ -125,8 +125,8 @@ const size_t _num_postsynaptic_idx = _dynamic_array_AMPA0__synaptic_post.size();
                         
             const int32_t _postsynaptic_idx = _ptr_array_AMPA0__synaptic_post[_idx];
             const double I_wo_syn_ampa_post = _ptr_array_Core_1_I_wo_syn_ampa[_postsynaptic_idx];
-            const double I_tau_syn_ampa_post = _ptr_array_Core_1_I_tau_syn_ampa[_postsynaptic_idx];
             double I_syn_ampa_post = _ptr_array_Core_1_I_syn_ampa[_postsynaptic_idx];
+            const double I_tau_syn_ampa_post = _ptr_array_Core_1_I_tau_syn_ampa[_postsynaptic_idx];
             const double I_g_syn_ampa_post = _ptr_array_Core_1_I_g_syn_ampa[_postsynaptic_idx];
             const double weight = _ptr_array_AMPA0_weight[_idx];
             I_syn_ampa_post += 1.0f*((I_wo_syn_ampa_post * weight) * I_g_syn_ampa_post)/(I_tau_syn_ampa_post * (1.0 + (1.0f*I_g_syn_ampa_post/I_syn_ampa_post)));
