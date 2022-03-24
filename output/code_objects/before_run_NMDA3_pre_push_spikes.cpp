@@ -72,17 +72,17 @@ void _before_run_NMDA3_pre_push_spikes()
 {
     using namespace brian;
     ///// CONSTANTS ///////////
-    double* const _array_NMDA3_delay = _dynamic_array_NMDA3_delay.empty()? 0 : &_dynamic_array_NMDA3_delay[0];
-const size_t _numdelay = _dynamic_array_NMDA3_delay.size();
-const int64_t _n_sources = 1;
+    const size_t _num_spikespace = 2;
 const int64_t _n_targets = 2;
 const size_t _num_source_dt = 1;
-const size_t _num_spikespace = 2;
+const int64_t _n_sources = 1;
+double* const _array_NMDA3_delay = _dynamic_array_NMDA3_delay.empty()? 0 : &_dynamic_array_NMDA3_delay[0];
+const size_t _numdelay = _dynamic_array_NMDA3_delay.size();
     ///// POINTERS ////////////
         
-    double* __restrict  _ptr_array_NMDA3_delay = _array_NMDA3_delay;
-    double*   _ptr_array_defaultclock_dt = _array_defaultclock_dt;
     int32_t* __restrict  _ptr_array_InpSpikeGenerator__spikespace = _array_InpSpikeGenerator__spikespace;
+    double*   _ptr_array_defaultclock_dt = _array_defaultclock_dt;
+    double* __restrict  _ptr_array_NMDA3_delay = _array_NMDA3_delay;
 
     std::vector<double> &real_delays = _dynamic_array_NMDA3_delay;
     double* real_delays_data = real_delays.empty() ? 0 : &(real_delays[0]);

@@ -83,26 +83,26 @@ void _run_GABA_B9_synapses_create_generator_codeobject()
 
 
     ///// CONSTANTS ///////////
-    int32_t* const _array_GABA_B9__synaptic_post = _dynamic_array_GABA_B9__synaptic_post.empty()? 0 : &_dynamic_array_GABA_B9__synaptic_post[0];
+    const int64_t _target_offset = 0;
+int32_t* const _array_GABA_B9__synaptic_post = _dynamic_array_GABA_B9__synaptic_post.empty()? 0 : &_dynamic_array_GABA_B9__synaptic_post[0];
 const size_t _num_synaptic_post = _dynamic_array_GABA_B9__synaptic_post.size();
-int32_t* const _array_GABA_B9__synaptic_pre = _dynamic_array_GABA_B9__synaptic_pre.empty()? 0 : &_dynamic_array_GABA_B9__synaptic_pre[0];
-const size_t _num_synaptic_pre = _dynamic_array_GABA_B9__synaptic_pre.size();
 int32_t* const _array_GABA_B9_N_incoming = _dynamic_array_GABA_B9_N_incoming.empty()? 0 : &_dynamic_array_GABA_B9_N_incoming[0];
 const size_t _numN_incoming = _dynamic_array_GABA_B9_N_incoming.size();
+const int64_t N_post = 2;
 const int64_t _source_offset = 2;
-const size_t _numN = 1;
-const int64_t _target_offset = 0;
 int32_t* const _array_GABA_B9_N_outgoing = _dynamic_array_GABA_B9_N_outgoing.empty()? 0 : &_dynamic_array_GABA_B9_N_outgoing[0];
 const size_t _numN_outgoing = _dynamic_array_GABA_B9_N_outgoing.size();
-const int64_t N_post = 2;
 const int64_t N_pre = 2;
+const size_t _numN = 1;
+int32_t* const _array_GABA_B9__synaptic_pre = _dynamic_array_GABA_B9__synaptic_pre.empty()? 0 : &_dynamic_array_GABA_B9__synaptic_pre[0];
+const size_t _num_synaptic_pre = _dynamic_array_GABA_B9__synaptic_pre.size();
     ///// POINTERS ////////////
         
     int32_t* __restrict  _ptr_array_GABA_B9__synaptic_post = _array_GABA_B9__synaptic_post;
-    int32_t* __restrict  _ptr_array_GABA_B9__synaptic_pre = _array_GABA_B9__synaptic_pre;
     int32_t* __restrict  _ptr_array_GABA_B9_N_incoming = _array_GABA_B9_N_incoming;
-    int32_t*   _ptr_array_GABA_B9_N = _array_GABA_B9_N;
     int32_t* __restrict  _ptr_array_GABA_B9_N_outgoing = _array_GABA_B9_N_outgoing;
+    int32_t*   _ptr_array_GABA_B9_N = _array_GABA_B9_N;
+    int32_t* __restrict  _ptr_array_GABA_B9__synaptic_pre = _array_GABA_B9__synaptic_pre;
 
 
     #include<iostream>

@@ -78,23 +78,23 @@ void _run_statemonitor_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _num_source_Imem = 256;
+    const size_t _num_indices = 2;
 double* const _array_statemonitor_t = _dynamic_array_statemonitor_t.empty()? 0 : &_dynamic_array_statemonitor_t[0];
 const size_t _numt = _dynamic_array_statemonitor_t.size();
+const size_t _num_source_Imem = 256;
 const size_t _numN = 1;
 const size_t _num_clock_t = 1;
-const size_t _num_indices = 2;
 const size_t _numnot_refractory = 256;
 const size_t _num_sub_idx = 2;
     ///// POINTERS ////////////
         
-    double* __restrict  _ptr_array_Core_1_Imem = _array_Core_1_Imem;
+    int32_t* __restrict  _ptr_array_statemonitor__indices = _array_statemonitor__indices;
     double* __restrict  _ptr_array_statemonitor_t = _array_statemonitor_t;
+    double* __restrict  _ptr_array_Core_1_Imem = _array_Core_1_Imem;
     int32_t*   _ptr_array_statemonitor_N = _array_statemonitor_N;
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    int32_t* __restrict  _ptr_array_statemonitor__indices = _array_statemonitor__indices;
     char* __restrict  _ptr_array_Core_1_not_refractory = _array_Core_1_not_refractory;
-    int32_t* __restrict  _ptr_array_Core_1_subgroup__sub_idx = _array_Core_1_subgroup__sub_idx;
+    int32_t* __restrict  _ptr_array_Core_1_subgroup_4__sub_idx = _array_Core_1_subgroup_4__sub_idx;
 
 
     _dynamic_array_statemonitor_t.push_back(_ptr_array_defaultclock_t[0]);
@@ -115,7 +115,7 @@ const size_t _num_sub_idx = 2;
         const size_t _idx = _ptr_array_statemonitor__indices[_i];
         const size_t _vectorisation_idx = _idx;
                 
-        const int32_t _sub_idx = _ptr_array_Core_1_subgroup__sub_idx[_idx];
+        const int32_t _sub_idx = _ptr_array_Core_1_subgroup_4__sub_idx[_idx];
         const double _source_Imem = _ptr_array_Core_1_Imem[_sub_idx];
         const double _to_record_Imem = _source_Imem;
 

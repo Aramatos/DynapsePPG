@@ -1,7 +1,7 @@
 randomkit.o: brianlib/randomkit/randomkit.c \
  brianlib/randomkit/randomkit.h
-AMPA0_post_codeobject_1.o: code_objects/AMPA0_post_codeobject_1.cpp \
- code_objects/AMPA0_post_codeobject_1.h objects.h synapses_classes.h \
+AMPA0_post_codeobject.o: code_objects/AMPA0_post_codeobject.cpp \
+ code_objects/AMPA0_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -12,8 +12,8 @@ AMPA0_post_push_spikes.o: code_objects/AMPA0_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-AMPA0_pre_codeobject_1.o: code_objects/AMPA0_pre_codeobject_1.cpp \
- code_objects/AMPA0_pre_codeobject_1.h objects.h synapses_classes.h \
+AMPA0_pre_codeobject.o: code_objects/AMPA0_pre_codeobject.cpp \
+ code_objects/AMPA0_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -115,8 +115,8 @@ Core_3_thresholder_1_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B4_post_codeobject_1.o: code_objects/GABA_B4_post_codeobject_1.cpp \
- code_objects/GABA_B4_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B4_post_codeobject.o: code_objects/GABA_B4_post_codeobject.cpp \
+ code_objects/GABA_B4_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -127,8 +127,8 @@ GABA_B4_post_push_spikes.o: code_objects/GABA_B4_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B4_pre_codeobject_1.o: code_objects/GABA_B4_pre_codeobject_1.cpp \
- code_objects/GABA_B4_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B4_pre_codeobject.o: code_objects/GABA_B4_pre_codeobject.cpp \
+ code_objects/GABA_B4_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -146,8 +146,8 @@ GABA_B4_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-GABA_B5_post_codeobject_1.o: code_objects/GABA_B5_post_codeobject_1.cpp \
- code_objects/GABA_B5_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B5_post_codeobject.o: code_objects/GABA_B5_post_codeobject.cpp \
+ code_objects/GABA_B5_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -158,8 +158,8 @@ GABA_B5_post_push_spikes.o: code_objects/GABA_B5_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B5_pre_codeobject_1.o: code_objects/GABA_B5_pre_codeobject_1.cpp \
- code_objects/GABA_B5_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B5_pre_codeobject.o: code_objects/GABA_B5_pre_codeobject.cpp \
+ code_objects/GABA_B5_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -177,8 +177,8 @@ GABA_B5_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-GABA_B6_post_codeobject_1.o: code_objects/GABA_B6_post_codeobject_1.cpp \
- code_objects/GABA_B6_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B6_post_codeobject.o: code_objects/GABA_B6_post_codeobject.cpp \
+ code_objects/GABA_B6_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -189,8 +189,8 @@ GABA_B6_post_push_spikes.o: code_objects/GABA_B6_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B6_pre_codeobject_1.o: code_objects/GABA_B6_pre_codeobject_1.cpp \
- code_objects/GABA_B6_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B6_pre_codeobject.o: code_objects/GABA_B6_pre_codeobject.cpp \
+ code_objects/GABA_B6_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -208,8 +208,8 @@ GABA_B6_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-GABA_B7_post_codeobject_1.o: code_objects/GABA_B7_post_codeobject_1.cpp \
- code_objects/GABA_B7_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B7_post_codeobject.o: code_objects/GABA_B7_post_codeobject.cpp \
+ code_objects/GABA_B7_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -220,8 +220,8 @@ GABA_B7_post_push_spikes.o: code_objects/GABA_B7_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B7_pre_codeobject_1.o: code_objects/GABA_B7_pre_codeobject_1.cpp \
- code_objects/GABA_B7_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B7_pre_codeobject.o: code_objects/GABA_B7_pre_codeobject.cpp \
+ code_objects/GABA_B7_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -239,8 +239,8 @@ GABA_B7_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-GABA_B8_post_codeobject_1.o: code_objects/GABA_B8_post_codeobject_1.cpp \
- code_objects/GABA_B8_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B8_post_codeobject.o: code_objects/GABA_B8_post_codeobject.cpp \
+ code_objects/GABA_B8_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -251,8 +251,8 @@ GABA_B8_post_push_spikes.o: code_objects/GABA_B8_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B8_pre_codeobject_1.o: code_objects/GABA_B8_pre_codeobject_1.cpp \
- code_objects/GABA_B8_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B8_pre_codeobject.o: code_objects/GABA_B8_pre_codeobject.cpp \
+ code_objects/GABA_B8_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -270,8 +270,8 @@ GABA_B8_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-GABA_B9_post_codeobject_1.o: code_objects/GABA_B9_post_codeobject_1.cpp \
- code_objects/GABA_B9_post_codeobject_1.h objects.h synapses_classes.h \
+GABA_B9_post_codeobject.o: code_objects/GABA_B9_post_codeobject.cpp \
+ code_objects/GABA_B9_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -282,8 +282,8 @@ GABA_B9_post_push_spikes.o: code_objects/GABA_B9_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-GABA_B9_pre_codeobject_1.o: code_objects/GABA_B9_pre_codeobject_1.cpp \
- code_objects/GABA_B9_pre_codeobject_1.h objects.h synapses_classes.h \
+GABA_B9_pre_codeobject.o: code_objects/GABA_B9_pre_codeobject.cpp \
+ code_objects/GABA_B9_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -301,15 +301,15 @@ GABA_B9_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-InpSpikeGenerator_codeobject_1.o: \
- code_objects/InpSpikeGenerator_codeobject_1.cpp \
- code_objects/InpSpikeGenerator_codeobject_1.h objects.h \
- synapses_classes.h brianlib/spikequeue.h brianlib/stdint_compat.h \
- brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
+InpSpikeGenerator_codeobject.o: \
+ code_objects/InpSpikeGenerator_codeobject.cpp \
+ code_objects/InpSpikeGenerator_codeobject.h objects.h synapses_classes.h \
+ brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
+ brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-NMDA1_post_codeobject_1.o: code_objects/NMDA1_post_codeobject_1.cpp \
- code_objects/NMDA1_post_codeobject_1.h objects.h synapses_classes.h \
+NMDA1_post_codeobject.o: code_objects/NMDA1_post_codeobject.cpp \
+ code_objects/NMDA1_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -320,8 +320,8 @@ NMDA1_post_push_spikes.o: code_objects/NMDA1_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-NMDA1_pre_codeobject_1.o: code_objects/NMDA1_pre_codeobject_1.cpp \
- code_objects/NMDA1_pre_codeobject_1.h objects.h synapses_classes.h \
+NMDA1_pre_codeobject.o: code_objects/NMDA1_pre_codeobject.cpp \
+ code_objects/NMDA1_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -339,8 +339,8 @@ NMDA1_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-NMDA2_post_codeobject_1.o: code_objects/NMDA2_post_codeobject_1.cpp \
- code_objects/NMDA2_post_codeobject_1.h objects.h synapses_classes.h \
+NMDA2_post_codeobject.o: code_objects/NMDA2_post_codeobject.cpp \
+ code_objects/NMDA2_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -351,8 +351,8 @@ NMDA2_post_push_spikes.o: code_objects/NMDA2_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-NMDA2_pre_codeobject_1.o: code_objects/NMDA2_pre_codeobject_1.cpp \
- code_objects/NMDA2_pre_codeobject_1.h objects.h synapses_classes.h \
+NMDA2_pre_codeobject.o: code_objects/NMDA2_pre_codeobject.cpp \
+ code_objects/NMDA2_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -370,8 +370,8 @@ NMDA2_synapses_create_generator_codeobject.o: \
  brianlib/clocks.h brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h synapses_classes.h
-NMDA3_post_codeobject_1.o: code_objects/NMDA3_post_codeobject_1.cpp \
- code_objects/NMDA3_post_codeobject_1.h objects.h synapses_classes.h \
+NMDA3_post_codeobject.o: code_objects/NMDA3_post_codeobject.cpp \
+ code_objects/NMDA3_post_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -382,8 +382,8 @@ NMDA3_post_push_spikes.o: code_objects/NMDA3_post_push_spikes.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-NMDA3_pre_codeobject_1.o: code_objects/NMDA3_pre_codeobject_1.cpp \
- code_objects/NMDA3_pre_codeobject_1.h objects.h synapses_classes.h \
+NMDA3_pre_codeobject.o: code_objects/NMDA3_pre_codeobject.cpp \
+ code_objects/NMDA3_pre_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -619,8 +619,8 @@ statemonitor_12_codeobject.o: code_objects/statemonitor_12_codeobject.cpp \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
  brianlib/common_math.h
-statemonitor_13_codeobject.o: code_objects/statemonitor_13_codeobject.cpp \
- code_objects/statemonitor_13_codeobject.h objects.h synapses_classes.h \
+statemonitor_14_codeobject.o: code_objects/statemonitor_14_codeobject.cpp \
+ code_objects/statemonitor_14_codeobject.h objects.h synapses_classes.h \
  brianlib/spikequeue.h brianlib/stdint_compat.h brianlib/clocks.h \
  brianlib/stdint_compat.h brianlib/dynamic_array.h \
  brianlib/stdint_compat.h network.h brianlib/randomkit/randomkit.h \
@@ -689,11 +689,10 @@ main.o: main.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  brianlib/stdint_compat.h brianlib/clocks.h brianlib/stdint_compat.h \
  brianlib/dynamic_array.h brianlib/stdint_compat.h network.h \
  brianlib/randomkit/randomkit.h run.h brianlib/common_math.h \
- code_objects/AMPA0_post_codeobject_1.h \
+ code_objects/AMPA0_post_codeobject.h \
  code_objects/AMPA0_post_push_spikes.h \
  code_objects/before_run_AMPA0_post_push_spikes.h \
- code_objects/AMPA0_pre_codeobject_1.h \
- code_objects/AMPA0_pre_push_spikes.h \
+ code_objects/AMPA0_pre_codeobject.h code_objects/AMPA0_pre_push_spikes.h \
  code_objects/before_run_AMPA0_pre_push_spikes.h \
  code_objects/AMPA0_synapses_create_generator_codeobject.h \
  code_objects/Core_0_resetter_1_codeobject.h \
@@ -712,70 +711,67 @@ main.o: main.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/Core_3_stateupdater_1_codeobject.h \
  code_objects/Core_3_thresholder_1_codeobject.h \
  code_objects/after_run_Core_3_thresholder_1_codeobject.h \
- code_objects/GABA_B4_post_codeobject_1.h \
+ code_objects/GABA_B4_post_codeobject.h \
  code_objects/GABA_B4_post_push_spikes.h \
  code_objects/before_run_GABA_B4_post_push_spikes.h \
- code_objects/GABA_B4_pre_codeobject_1.h \
+ code_objects/GABA_B4_pre_codeobject.h \
  code_objects/GABA_B4_pre_push_spikes.h \
  code_objects/before_run_GABA_B4_pre_push_spikes.h \
  code_objects/GABA_B4_synapses_create_generator_codeobject.h \
- code_objects/GABA_B5_post_codeobject_1.h \
+ code_objects/GABA_B5_post_codeobject.h \
  code_objects/GABA_B5_post_push_spikes.h \
  code_objects/before_run_GABA_B5_post_push_spikes.h \
- code_objects/GABA_B5_pre_codeobject_1.h \
+ code_objects/GABA_B5_pre_codeobject.h \
  code_objects/GABA_B5_pre_push_spikes.h \
  code_objects/before_run_GABA_B5_pre_push_spikes.h \
  code_objects/GABA_B5_synapses_create_generator_codeobject.h \
- code_objects/GABA_B6_post_codeobject_1.h \
+ code_objects/GABA_B6_post_codeobject.h \
  code_objects/GABA_B6_post_push_spikes.h \
  code_objects/before_run_GABA_B6_post_push_spikes.h \
- code_objects/GABA_B6_pre_codeobject_1.h \
+ code_objects/GABA_B6_pre_codeobject.h \
  code_objects/GABA_B6_pre_push_spikes.h \
  code_objects/before_run_GABA_B6_pre_push_spikes.h \
  code_objects/GABA_B6_synapses_create_generator_codeobject.h \
- code_objects/GABA_B7_post_codeobject_1.h \
+ code_objects/GABA_B7_post_codeobject.h \
  code_objects/GABA_B7_post_push_spikes.h \
  code_objects/before_run_GABA_B7_post_push_spikes.h \
- code_objects/GABA_B7_pre_codeobject_1.h \
+ code_objects/GABA_B7_pre_codeobject.h \
  code_objects/GABA_B7_pre_push_spikes.h \
  code_objects/before_run_GABA_B7_pre_push_spikes.h \
  code_objects/GABA_B7_synapses_create_generator_codeobject.h \
- code_objects/GABA_B8_post_codeobject_1.h \
+ code_objects/GABA_B8_post_codeobject.h \
  code_objects/GABA_B8_post_push_spikes.h \
  code_objects/before_run_GABA_B8_post_push_spikes.h \
- code_objects/GABA_B8_pre_codeobject_1.h \
+ code_objects/GABA_B8_pre_codeobject.h \
  code_objects/GABA_B8_pre_push_spikes.h \
  code_objects/before_run_GABA_B8_pre_push_spikes.h \
  code_objects/GABA_B8_synapses_create_generator_codeobject.h \
- code_objects/GABA_B9_post_codeobject_1.h \
+ code_objects/GABA_B9_post_codeobject.h \
  code_objects/GABA_B9_post_push_spikes.h \
  code_objects/before_run_GABA_B9_post_push_spikes.h \
- code_objects/GABA_B9_pre_codeobject_1.h \
+ code_objects/GABA_B9_pre_codeobject.h \
  code_objects/GABA_B9_pre_push_spikes.h \
  code_objects/before_run_GABA_B9_pre_push_spikes.h \
  code_objects/GABA_B9_synapses_create_generator_codeobject.h \
  code_objects/inh_neuron_output_codeobject.h \
- code_objects/InpSpikeGenerator_codeobject_1.h \
+ code_objects/InpSpikeGenerator_codeobject.h \
  code_objects/mon_neuron_input_codeobject.h \
- code_objects/NMDA1_post_codeobject_1.h \
+ code_objects/NMDA1_post_codeobject.h \
  code_objects/NMDA1_post_push_spikes.h \
  code_objects/before_run_NMDA1_post_push_spikes.h \
- code_objects/NMDA1_pre_codeobject_1.h \
- code_objects/NMDA1_pre_push_spikes.h \
+ code_objects/NMDA1_pre_codeobject.h code_objects/NMDA1_pre_push_spikes.h \
  code_objects/before_run_NMDA1_pre_push_spikes.h \
  code_objects/NMDA1_synapses_create_generator_codeobject.h \
- code_objects/NMDA2_post_codeobject_1.h \
+ code_objects/NMDA2_post_codeobject.h \
  code_objects/NMDA2_post_push_spikes.h \
  code_objects/before_run_NMDA2_post_push_spikes.h \
- code_objects/NMDA2_pre_codeobject_1.h \
- code_objects/NMDA2_pre_push_spikes.h \
+ code_objects/NMDA2_pre_codeobject.h code_objects/NMDA2_pre_push_spikes.h \
  code_objects/before_run_NMDA2_pre_push_spikes.h \
  code_objects/NMDA2_synapses_create_generator_codeobject.h \
- code_objects/NMDA3_post_codeobject_1.h \
+ code_objects/NMDA3_post_codeobject.h \
  code_objects/NMDA3_post_push_spikes.h \
  code_objects/before_run_NMDA3_post_push_spikes.h \
- code_objects/NMDA3_pre_codeobject_1.h \
- code_objects/NMDA3_pre_push_spikes.h \
+ code_objects/NMDA3_pre_codeobject.h code_objects/NMDA3_pre_push_spikes.h \
  code_objects/before_run_NMDA3_pre_push_spikes.h \
  code_objects/NMDA3_synapses_create_generator_codeobject.h \
  code_objects/spikemonitor_1_codeobject.h \
@@ -784,7 +780,7 @@ main.o: main.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/statemonitor_10_codeobject.h \
  code_objects/statemonitor_11_codeobject.h \
  code_objects/statemonitor_12_codeobject.h \
- code_objects/statemonitor_13_codeobject.h \
+ code_objects/statemonitor_14_codeobject.h \
  code_objects/statemonitor_1_codeobject.h \
  code_objects/statemonitor_2_codeobject.h \
  code_objects/statemonitor_3_codeobject.h \
@@ -804,10 +800,9 @@ objects.o: objects.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
 run.o: run.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  brianlib/stdint_compat.h brianlib/clocks.h brianlib/stdint_compat.h \
  brianlib/dynamic_array.h brianlib/stdint_compat.h network.h \
- brianlib/randomkit/randomkit.h code_objects/AMPA0_post_codeobject_1.h \
+ brianlib/randomkit/randomkit.h code_objects/AMPA0_post_codeobject.h \
  code_objects/AMPA0_post_push_spikes.h \
- code_objects/AMPA0_pre_codeobject_1.h \
- code_objects/AMPA0_pre_push_spikes.h \
+ code_objects/AMPA0_pre_codeobject.h code_objects/AMPA0_pre_push_spikes.h \
  code_objects/AMPA0_synapses_create_generator_codeobject.h \
  code_objects/Core_0_resetter_1_codeobject.h \
  code_objects/Core_0_stateupdater_1_codeobject.h \
@@ -821,53 +816,50 @@ run.o: run.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/Core_3_resetter_1_codeobject.h \
  code_objects/Core_3_stateupdater_1_codeobject.h \
  code_objects/Core_3_thresholder_1_codeobject.h \
- code_objects/GABA_B4_post_codeobject_1.h \
+ code_objects/GABA_B4_post_codeobject.h \
  code_objects/GABA_B4_post_push_spikes.h \
- code_objects/GABA_B4_pre_codeobject_1.h \
+ code_objects/GABA_B4_pre_codeobject.h \
  code_objects/GABA_B4_pre_push_spikes.h \
  code_objects/GABA_B4_synapses_create_generator_codeobject.h \
- code_objects/GABA_B5_post_codeobject_1.h \
+ code_objects/GABA_B5_post_codeobject.h \
  code_objects/GABA_B5_post_push_spikes.h \
- code_objects/GABA_B5_pre_codeobject_1.h \
+ code_objects/GABA_B5_pre_codeobject.h \
  code_objects/GABA_B5_pre_push_spikes.h \
  code_objects/GABA_B5_synapses_create_generator_codeobject.h \
- code_objects/GABA_B6_post_codeobject_1.h \
+ code_objects/GABA_B6_post_codeobject.h \
  code_objects/GABA_B6_post_push_spikes.h \
- code_objects/GABA_B6_pre_codeobject_1.h \
+ code_objects/GABA_B6_pre_codeobject.h \
  code_objects/GABA_B6_pre_push_spikes.h \
  code_objects/GABA_B6_synapses_create_generator_codeobject.h \
- code_objects/GABA_B7_post_codeobject_1.h \
+ code_objects/GABA_B7_post_codeobject.h \
  code_objects/GABA_B7_post_push_spikes.h \
- code_objects/GABA_B7_pre_codeobject_1.h \
+ code_objects/GABA_B7_pre_codeobject.h \
  code_objects/GABA_B7_pre_push_spikes.h \
  code_objects/GABA_B7_synapses_create_generator_codeobject.h \
- code_objects/GABA_B8_post_codeobject_1.h \
+ code_objects/GABA_B8_post_codeobject.h \
  code_objects/GABA_B8_post_push_spikes.h \
- code_objects/GABA_B8_pre_codeobject_1.h \
+ code_objects/GABA_B8_pre_codeobject.h \
  code_objects/GABA_B8_pre_push_spikes.h \
  code_objects/GABA_B8_synapses_create_generator_codeobject.h \
- code_objects/GABA_B9_post_codeobject_1.h \
+ code_objects/GABA_B9_post_codeobject.h \
  code_objects/GABA_B9_post_push_spikes.h \
- code_objects/GABA_B9_pre_codeobject_1.h \
+ code_objects/GABA_B9_pre_codeobject.h \
  code_objects/GABA_B9_pre_push_spikes.h \
  code_objects/GABA_B9_synapses_create_generator_codeobject.h \
  code_objects/inh_neuron_output_codeobject.h \
- code_objects/InpSpikeGenerator_codeobject_1.h \
+ code_objects/InpSpikeGenerator_codeobject.h \
  code_objects/mon_neuron_input_codeobject.h \
- code_objects/NMDA1_post_codeobject_1.h \
+ code_objects/NMDA1_post_codeobject.h \
  code_objects/NMDA1_post_push_spikes.h \
- code_objects/NMDA1_pre_codeobject_1.h \
- code_objects/NMDA1_pre_push_spikes.h \
+ code_objects/NMDA1_pre_codeobject.h code_objects/NMDA1_pre_push_spikes.h \
  code_objects/NMDA1_synapses_create_generator_codeobject.h \
- code_objects/NMDA2_post_codeobject_1.h \
+ code_objects/NMDA2_post_codeobject.h \
  code_objects/NMDA2_post_push_spikes.h \
- code_objects/NMDA2_pre_codeobject_1.h \
- code_objects/NMDA2_pre_push_spikes.h \
+ code_objects/NMDA2_pre_codeobject.h code_objects/NMDA2_pre_push_spikes.h \
  code_objects/NMDA2_synapses_create_generator_codeobject.h \
- code_objects/NMDA3_post_codeobject_1.h \
+ code_objects/NMDA3_post_codeobject.h \
  code_objects/NMDA3_post_push_spikes.h \
- code_objects/NMDA3_pre_codeobject_1.h \
- code_objects/NMDA3_pre_push_spikes.h \
+ code_objects/NMDA3_pre_codeobject.h code_objects/NMDA3_pre_push_spikes.h \
  code_objects/NMDA3_synapses_create_generator_codeobject.h \
  code_objects/spikemonitor_1_codeobject.h \
  code_objects/spikemonitor_2_codeobject.h \
@@ -875,7 +867,7 @@ run.o: run.cpp objects.h synapses_classes.h brianlib/spikequeue.h \
  code_objects/statemonitor_10_codeobject.h \
  code_objects/statemonitor_11_codeobject.h \
  code_objects/statemonitor_12_codeobject.h \
- code_objects/statemonitor_13_codeobject.h \
+ code_objects/statemonitor_14_codeobject.h \
  code_objects/statemonitor_1_codeobject.h \
  code_objects/statemonitor_2_codeobject.h \
  code_objects/statemonitor_3_codeobject.h \

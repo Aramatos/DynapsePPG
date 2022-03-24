@@ -78,26 +78,26 @@ void _run_Core_0_resetter_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _numIo = 1;
-const size_t _numItauahp = 1;
+    const size_t _numImem = 256;
 const size_t _numIca = 256;
+const size_t _numIo = 1;
+const size_t _numIahp = 256;
 const size_t _numIreset = 1;
 const int64_t N = 256;
-const size_t _numImem = 256;
 const size_t _num_spikespace = 257;
-const size_t _numIahp = 256;
 const size_t _numIthahp = 1;
+const size_t _numItauahp = 1;
 const size_t _numnot_refractory = 256;
     ///// POINTERS ////////////
         
-    double*   _ptr_array_Core_0_Io = _array_Core_0_Io;
-    double*   _ptr_array_Core_0_Itauahp = _array_Core_0_Itauahp;
-    double* __restrict  _ptr_array_Core_0_Ica = _array_Core_0_Ica;
-    double*   _ptr_array_Core_0_Ireset = _array_Core_0_Ireset;
     double* __restrict  _ptr_array_Core_0_Imem = _array_Core_0_Imem;
-    int32_t* __restrict  _ptr_array_Core_0__spikespace = _array_Core_0__spikespace;
+    double* __restrict  _ptr_array_Core_0_Ica = _array_Core_0_Ica;
+    double*   _ptr_array_Core_0_Io = _array_Core_0_Io;
     double* __restrict  _ptr_array_Core_0_Iahp = _array_Core_0_Iahp;
+    double*   _ptr_array_Core_0_Ireset = _array_Core_0_Ireset;
+    int32_t* __restrict  _ptr_array_Core_0__spikespace = _array_Core_0__spikespace;
     double*   _ptr_array_Core_0_Ithahp = _array_Core_0_Ithahp;
+    double*   _ptr_array_Core_0_Itauahp = _array_Core_0_Itauahp;
     char* __restrict  _ptr_array_Core_0_not_refractory = _array_Core_0_not_refractory;
 
 
@@ -109,9 +109,9 @@ const size_t _numnot_refractory = 256;
 	// scalar code
 	const size_t _vectorisation_idx = -1;
  	
- const double Itauahp = _ptr_array_Core_0_Itauahp[0];
- const double Ireset = _ptr_array_Core_0_Ireset[0];
  const double Io = _ptr_array_Core_0_Io[0];
+ const double Ireset = _ptr_array_Core_0_Ireset[0];
+ const double Itauahp = _ptr_array_Core_0_Itauahp[0];
  const double Ithahp = _ptr_array_Core_0_Ithahp[0];
  const double _lio_1 = 1.0f*1.0/Itauahp;
 

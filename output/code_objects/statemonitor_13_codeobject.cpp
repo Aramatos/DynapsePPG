@@ -78,21 +78,21 @@ void _run_statemonitor_13_codeobject()
 
 
     ///// CONSTANTS ///////////
-    const size_t _num_source_Imem = 256;
+    const size_t _num_indices = 1;
 double* const _array_statemonitor_13_t = _dynamic_array_statemonitor_13_t.empty()? 0 : &_dynamic_array_statemonitor_13_t[0];
 const size_t _numt = _dynamic_array_statemonitor_13_t.size();
+const size_t _num_source_Imem = 256;
 const size_t _numN = 1;
 const size_t _num_clock_t = 1;
-const size_t _num_indices = 1;
 const size_t _numnot_refractory = 256;
 const size_t _num_sub_idx = 2;
     ///// POINTERS ////////////
         
-    double* __restrict  _ptr_array_Core_1_Imem = _array_Core_1_Imem;
+    int32_t*   _ptr_array_statemonitor_13__indices = _array_statemonitor_13__indices;
     double* __restrict  _ptr_array_statemonitor_13_t = _array_statemonitor_13_t;
+    double* __restrict  _ptr_array_Core_1_Imem = _array_Core_1_Imem;
     int32_t*   _ptr_array_statemonitor_13_N = _array_statemonitor_13_N;
     double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    int32_t*   _ptr_array_statemonitor_13__indices = _array_statemonitor_13__indices;
     char* __restrict  _ptr_array_Core_1_not_refractory = _array_Core_1_not_refractory;
     int32_t* __restrict  _ptr_array_Core_1_subgroup_3__sub_idx = _array_Core_1_subgroup_3__sub_idx;
 

@@ -73,20 +73,20 @@ void _after_run_Core_0_thresholder_codeobject()
     using namespace brian;
     ///// CONSTANTS ///////////
     const size_t _numIspkthr = 1;
-const size_t _numt = 1;
-const size_t _numnot_refractory = 256;
-const size_t _numlastspike = 256;
 const size_t _numImem = 256;
-const int64_t N = 256;
 const size_t _num_spikespace = 257;
+const size_t _numlastspike = 256;
+const size_t _numt = 1;
+const int64_t N = 256;
+const size_t _numnot_refractory = 256;
     ///// POINTERS ////////////
         
     double*   _ptr_array_Core_0_Ispkthr = _array_Core_0_Ispkthr;
-    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
-    char* __restrict  _ptr_array_Core_0_not_refractory = _array_Core_0_not_refractory;
-    double* __restrict  _ptr_array_Core_0_lastspike = _array_Core_0_lastspike;
     double* __restrict  _ptr_array_Core_0_Imem = _array_Core_0_Imem;
     int32_t* __restrict  _ptr_array_Core_0__spikespace = _array_Core_0__spikespace;
+    double* __restrict  _ptr_array_Core_0_lastspike = _array_Core_0_lastspike;
+    double*   _ptr_array_defaultclock_t = _array_defaultclock_t;
+    char* __restrict  _ptr_array_Core_0_not_refractory = _array_Core_0_not_refractory;
 
 _ptr_array_Core_0__spikespace[N] = 0;  // Note that this is not an off-by-1-error: the array has N+1 elements
 

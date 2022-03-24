@@ -1,5 +1,8 @@
+import numpy as np
+
+
 def SpikeGenerator(rate,duration):
-    import numpy as np
+    
      # Input Generator
     ##################
     # TODO: 

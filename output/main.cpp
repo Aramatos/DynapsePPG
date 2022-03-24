@@ -7,10 +7,10 @@
 #include "brianlib/common_math.h"
 #include "randomkit.h"
 
-#include "code_objects/AMPA0_post_codeobject_1.h"
+#include "code_objects/AMPA0_post_codeobject.h"
 #include "code_objects/AMPA0_post_push_spikes.h"
 #include "code_objects/before_run_AMPA0_post_push_spikes.h"
-#include "code_objects/AMPA0_pre_codeobject_1.h"
+#include "code_objects/AMPA0_pre_codeobject.h"
 #include "code_objects/AMPA0_pre_push_spikes.h"
 #include "code_objects/before_run_AMPA0_pre_push_spikes.h"
 #include "code_objects/AMPA0_synapses_create_generator_codeobject.h"
@@ -30,69 +30,69 @@
 #include "code_objects/Core_3_stateupdater_1_codeobject.h"
 #include "code_objects/Core_3_thresholder_1_codeobject.h"
 #include "code_objects/after_run_Core_3_thresholder_1_codeobject.h"
-#include "code_objects/GABA_B4_post_codeobject_1.h"
+#include "code_objects/GABA_B4_post_codeobject.h"
 #include "code_objects/GABA_B4_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B4_post_push_spikes.h"
-#include "code_objects/GABA_B4_pre_codeobject_1.h"
+#include "code_objects/GABA_B4_pre_codeobject.h"
 #include "code_objects/GABA_B4_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B4_pre_push_spikes.h"
 #include "code_objects/GABA_B4_synapses_create_generator_codeobject.h"
-#include "code_objects/GABA_B5_post_codeobject_1.h"
+#include "code_objects/GABA_B5_post_codeobject.h"
 #include "code_objects/GABA_B5_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B5_post_push_spikes.h"
-#include "code_objects/GABA_B5_pre_codeobject_1.h"
+#include "code_objects/GABA_B5_pre_codeobject.h"
 #include "code_objects/GABA_B5_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B5_pre_push_spikes.h"
 #include "code_objects/GABA_B5_synapses_create_generator_codeobject.h"
-#include "code_objects/GABA_B6_post_codeobject_1.h"
+#include "code_objects/GABA_B6_post_codeobject.h"
 #include "code_objects/GABA_B6_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B6_post_push_spikes.h"
-#include "code_objects/GABA_B6_pre_codeobject_1.h"
+#include "code_objects/GABA_B6_pre_codeobject.h"
 #include "code_objects/GABA_B6_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B6_pre_push_spikes.h"
 #include "code_objects/GABA_B6_synapses_create_generator_codeobject.h"
-#include "code_objects/GABA_B7_post_codeobject_1.h"
+#include "code_objects/GABA_B7_post_codeobject.h"
 #include "code_objects/GABA_B7_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B7_post_push_spikes.h"
-#include "code_objects/GABA_B7_pre_codeobject_1.h"
+#include "code_objects/GABA_B7_pre_codeobject.h"
 #include "code_objects/GABA_B7_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B7_pre_push_spikes.h"
 #include "code_objects/GABA_B7_synapses_create_generator_codeobject.h"
-#include "code_objects/GABA_B8_post_codeobject_1.h"
+#include "code_objects/GABA_B8_post_codeobject.h"
 #include "code_objects/GABA_B8_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B8_post_push_spikes.h"
-#include "code_objects/GABA_B8_pre_codeobject_1.h"
+#include "code_objects/GABA_B8_pre_codeobject.h"
 #include "code_objects/GABA_B8_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B8_pre_push_spikes.h"
 #include "code_objects/GABA_B8_synapses_create_generator_codeobject.h"
-#include "code_objects/GABA_B9_post_codeobject_1.h"
+#include "code_objects/GABA_B9_post_codeobject.h"
 #include "code_objects/GABA_B9_post_push_spikes.h"
 #include "code_objects/before_run_GABA_B9_post_push_spikes.h"
-#include "code_objects/GABA_B9_pre_codeobject_1.h"
+#include "code_objects/GABA_B9_pre_codeobject.h"
 #include "code_objects/GABA_B9_pre_push_spikes.h"
 #include "code_objects/before_run_GABA_B9_pre_push_spikes.h"
 #include "code_objects/GABA_B9_synapses_create_generator_codeobject.h"
 #include "code_objects/inh_neuron_output_codeobject.h"
-#include "code_objects/InpSpikeGenerator_codeobject_1.h"
+#include "code_objects/InpSpikeGenerator_codeobject.h"
 #include "code_objects/mon_neuron_input_codeobject.h"
-#include "code_objects/NMDA1_post_codeobject_1.h"
+#include "code_objects/NMDA1_post_codeobject.h"
 #include "code_objects/NMDA1_post_push_spikes.h"
 #include "code_objects/before_run_NMDA1_post_push_spikes.h"
-#include "code_objects/NMDA1_pre_codeobject_1.h"
+#include "code_objects/NMDA1_pre_codeobject.h"
 #include "code_objects/NMDA1_pre_push_spikes.h"
 #include "code_objects/before_run_NMDA1_pre_push_spikes.h"
 #include "code_objects/NMDA1_synapses_create_generator_codeobject.h"
-#include "code_objects/NMDA2_post_codeobject_1.h"
+#include "code_objects/NMDA2_post_codeobject.h"
 #include "code_objects/NMDA2_post_push_spikes.h"
 #include "code_objects/before_run_NMDA2_post_push_spikes.h"
-#include "code_objects/NMDA2_pre_codeobject_1.h"
+#include "code_objects/NMDA2_pre_codeobject.h"
 #include "code_objects/NMDA2_pre_push_spikes.h"
 #include "code_objects/before_run_NMDA2_pre_push_spikes.h"
 #include "code_objects/NMDA2_synapses_create_generator_codeobject.h"
-#include "code_objects/NMDA3_post_codeobject_1.h"
+#include "code_objects/NMDA3_post_codeobject.h"
 #include "code_objects/NMDA3_post_push_spikes.h"
 #include "code_objects/before_run_NMDA3_post_push_spikes.h"
-#include "code_objects/NMDA3_pre_codeobject_1.h"
+#include "code_objects/NMDA3_pre_codeobject.h"
 #include "code_objects/NMDA3_pre_push_spikes.h"
 #include "code_objects/before_run_NMDA3_pre_push_spikes.h"
 #include "code_objects/NMDA3_synapses_create_generator_codeobject.h"
@@ -102,7 +102,7 @@
 #include "code_objects/statemonitor_10_codeobject.h"
 #include "code_objects/statemonitor_11_codeobject.h"
 #include "code_objects/statemonitor_12_codeobject.h"
-#include "code_objects/statemonitor_13_codeobject.h"
+#include "code_objects/statemonitor_14_codeobject.h"
 #include "code_objects/statemonitor_1_codeobject.h"
 #include "code_objects/statemonitor_2_codeobject.h"
 #include "code_objects/statemonitor_3_codeobject.h"
@@ -1067,7 +1067,7 @@ int main(int argc, char **argv)
         _array_statemonitor_10__indices[0] = 0;
         _array_statemonitor_11__indices[0] = 0;
         _array_statemonitor_12__indices[0] = 0;
-        _array_statemonitor_13__indices[0] = 0;
+        _array_statemonitor_14__indices[0] = 0;
         _array_defaultclock_timestep[0] = 0;
         _array_defaultclock_t[0] = 0.0;
         _array_InpSpikeGenerator__lastindex[0] = 0;
@@ -1105,7 +1105,7 @@ int main(int argc, char **argv)
         network_1.add(&defaultclock, _run_statemonitor_10_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_11_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_12_codeobject);
-        network_1.add(&defaultclock, _run_statemonitor_13_codeobject);
+        network_1.add(&defaultclock, _run_statemonitor_14_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_2_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_3_codeobject);
         network_1.add(&defaultclock, _run_statemonitor_4_codeobject);
@@ -1122,52 +1122,52 @@ int main(int argc, char **argv)
         network_1.add(&defaultclock, _run_Core_1_thresholder_1_codeobject);
         network_1.add(&defaultclock, _run_Core_2_thresholder_1_codeobject);
         network_1.add(&defaultclock, _run_Core_3_thresholder_1_codeobject);
-        network_1.add(&defaultclock, _run_InpSpikeGenerator_codeobject_1);
+        network_1.add(&defaultclock, _run_InpSpikeGenerator_codeobject);
         network_1.add(&defaultclock, _run_mon_neuron_input_codeobject);
         network_1.add(&defaultclock, _run_inh_neuron_output_codeobject);
         network_1.add(&defaultclock, _run_spikemonitor_codeobject);
         network_1.add(&defaultclock, _run_spikemonitor_1_codeobject);
         network_1.add(&defaultclock, _run_spikemonitor_2_codeobject);
         network_1.add(&defaultclock, _run_AMPA0_pre_push_spikes);
-        network_1.add(&defaultclock, _run_AMPA0_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_AMPA0_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B4_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B4_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B4_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B5_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B5_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B5_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B6_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B6_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B6_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B7_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B7_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B7_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B8_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B8_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B8_pre_codeobject);
         network_1.add(&defaultclock, _run_GABA_B9_pre_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B9_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B9_pre_codeobject);
         network_1.add(&defaultclock, _run_NMDA1_pre_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA1_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA1_pre_codeobject);
         network_1.add(&defaultclock, _run_NMDA2_pre_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA2_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA2_pre_codeobject);
         network_1.add(&defaultclock, _run_NMDA3_pre_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA3_pre_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA3_pre_codeobject);
         network_1.add(&defaultclock, _run_AMPA0_post_push_spikes);
-        network_1.add(&defaultclock, _run_AMPA0_post_codeobject_1);
+        network_1.add(&defaultclock, _run_AMPA0_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B4_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B4_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B4_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B5_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B5_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B5_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B6_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B6_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B6_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B7_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B7_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B7_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B8_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B8_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B8_post_codeobject);
         network_1.add(&defaultclock, _run_GABA_B9_post_push_spikes);
-        network_1.add(&defaultclock, _run_GABA_B9_post_codeobject_1);
+        network_1.add(&defaultclock, _run_GABA_B9_post_codeobject);
         network_1.add(&defaultclock, _run_NMDA1_post_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA1_post_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA1_post_codeobject);
         network_1.add(&defaultclock, _run_NMDA2_post_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA2_post_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA2_post_codeobject);
         network_1.add(&defaultclock, _run_NMDA3_post_push_spikes);
-        network_1.add(&defaultclock, _run_NMDA3_post_codeobject_1);
+        network_1.add(&defaultclock, _run_NMDA3_post_codeobject);
         network_1.add(&defaultclock, _run_Core_0_resetter_1_codeobject);
         network_1.add(&defaultclock, _run_Core_1_resetter_1_codeobject);
         network_1.add(&defaultclock, _run_Core_2_resetter_1_codeobject);
@@ -1198,83 +1198,83 @@ int main(int argc, char **argv)
         #endif
         
         #ifdef DEBUG
-        _debugmsg_AMPA0_pre_codeobject_1();
+        _debugmsg_AMPA0_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B4_pre_codeobject_1();
+        _debugmsg_GABA_B4_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B5_pre_codeobject_1();
+        _debugmsg_GABA_B5_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B6_pre_codeobject_1();
+        _debugmsg_GABA_B6_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B7_pre_codeobject_1();
+        _debugmsg_GABA_B7_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B8_pre_codeobject_1();
+        _debugmsg_GABA_B8_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B9_pre_codeobject_1();
+        _debugmsg_GABA_B9_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA1_pre_codeobject_1();
+        _debugmsg_NMDA1_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA2_pre_codeobject_1();
+        _debugmsg_NMDA2_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA3_pre_codeobject_1();
+        _debugmsg_NMDA3_pre_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_AMPA0_post_codeobject_1();
+        _debugmsg_AMPA0_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B4_post_codeobject_1();
+        _debugmsg_GABA_B4_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B5_post_codeobject_1();
+        _debugmsg_GABA_B5_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B6_post_codeobject_1();
+        _debugmsg_GABA_B6_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B7_post_codeobject_1();
+        _debugmsg_GABA_B7_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B8_post_codeobject_1();
+        _debugmsg_GABA_B8_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_GABA_B9_post_codeobject_1();
+        _debugmsg_GABA_B9_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA1_post_codeobject_1();
+        _debugmsg_NMDA1_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA2_post_codeobject_1();
+        _debugmsg_NMDA2_post_codeobject();
         #endif
         
         #ifdef DEBUG
-        _debugmsg_NMDA3_post_codeobject_1();
+        _debugmsg_NMDA3_post_codeobject();
         #endif
 
 	}
